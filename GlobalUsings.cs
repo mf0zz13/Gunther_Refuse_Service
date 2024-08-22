@@ -6,3 +6,5 @@ global using System.Diagnostics;
 global using System.Runtime.CompilerServices;
 global using GuntherRefuse.Model;
 global using GuntherRefuse.View;
+global using GuntherRefuse.Services;
+global using GuntherRefuse.ViewModel;

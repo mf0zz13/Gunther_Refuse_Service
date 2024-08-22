@@ -1,12 +1,51 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+<ContentPage x:Class="GuntherRefuse.View.EmployeeView"
+             xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="GuntherRefuse.View.EmployeeView"
-             Title="Employees">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+             xmlns:viewmodel="clr-namespace:GuntherRefuse.ViewModel"
+             xmlns:model="clr-namespace:GuntherRefuse.Model"
+             x:DataType="viewmodel:EmployeeViewModel"
+             Title="{Binding Title}">
+
+    <Grid ColumnDefinitions="*,*"
+          ColumnSpacing="5"
+          RowDefinitions="*,Auto">
+
+        <CollectionView Background="Transparent"
+                        Grid.ColumnSpan="2"
+                        ItemsSource="{Binding Employees}"
+                        SelectionMode="None">
+
+            <CollectionView.ItemTemplate>
+                <DataTemplate x:DataType="model:Employee">
+                    <Grid Padding="10">
+                        <Frame HeightRequest="125">
+                            <VerticalStackLayout Grid.Column="1"
+                                                 Padding="10"
+                                                 VerticalOptions="Center">
+                                <Label Text="{Binding FirstName}"/>
+                                <Label Text="{Binding LastName}"/>
+                                <Label Text="{Binding StartDate}"/>
+
+                            </VerticalStackLayout>
+                        </Frame>
+                    </Grid>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+        <Button Text="Get Employees"
+                Command="{Binding GetEmployeesCommand}"
+                IsEnabled="{Binding IsNotBusy}"
+                Grid.Column="0"
+                Grid.Row="1"
+                Margin="8"/>
+
+        <ActivityIndicator IsVisible="{Binding IsBusy}"
+                           IsRunning="{Binding IsBusy}"
+                           HorizontalOptions="FillAndExpand"
+                           VerticalOptions="CenterAndExpand"
+                           Grid.RowSpan="2"
+                           Grid.ColumnSpan="2"/>
+    </Grid>
+    
 </ContentPage>
