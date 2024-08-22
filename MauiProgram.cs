@@ -18,6 +18,15 @@ namespace GuntherRefuse
 #if DEBUG
     		builder.Logging.AddDebug();
 #endif
+
+            builder.Services.AddTransient<DispatchService>();
+            builder.Services.AddTransient<DispatchViewModel>();
+            builder.Services.AddTransient<DispatchView>();
+
+            builder.Services.AddSingleton<DispatcherService>();
+            builder.Services.AddSingleton<DispatcherViewModel>();
+            builder.Services.AddSingleton<DispatcherView>();
+
             builder.Services.AddSingleton<EmployeeService>();
             builder.Services.AddSingleton<EmployeeViewModel>();
             builder.Services.AddSingleton<EmployeeView>();

@@ -11,6 +11,11 @@
             <ShellContent ContentTemplate="{DataTemplate view:HomePageView}"/>
         </Tab>
     </FlyoutItem>
+    <FlyoutItem Title="Dispatch Trucks">
+        <Tab>
+            <ShellContent ContentTemplate="{DataTemplate view:DispatcherView}"/>
+        </Tab>
+    </FlyoutItem>
     <FlyoutItem Title="Manage Employees">
         <Tab>
             <ShellContent ContentTemplate="{DataTemplate view:EmployeeView}"/>

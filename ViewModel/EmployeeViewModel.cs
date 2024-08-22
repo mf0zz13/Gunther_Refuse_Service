@@ -8,7 +8,7 @@ public partial class EmployeeViewModel : BaseViewModel
 
     public EmployeeViewModel(EmployeeService employeeService)
     {
-        Title = "Employee's";
+        Title = "Manage Employee's";
         this.employeeService = employeeService;
         this.GetEmployeesAsync();
     }
@@ -33,7 +33,7 @@ public partial class EmployeeViewModel : BaseViewModel
             }
             
 
-}
+        }
         catch (Exception e)
         {
             Debug.WriteLine(e);

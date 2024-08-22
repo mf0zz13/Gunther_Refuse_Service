@@ -8,3 +8,5 @@ global using GuntherRefuse.Model;
 global using GuntherRefuse.View;
 global using GuntherRefuse.Services;
 global using GuntherRefuse.ViewModel;
+global using Microsoft.Data.SqlClient;
+global using Dapper;

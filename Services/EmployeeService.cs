@@ -1,6 +1,3 @@
-using Microsoft.Data.SqlClient;
-using Dapper;
-
 namespace GuntherRefuse.Services;
 
 public class EmployeeService
@@ -11,9 +8,7 @@ public class EmployeeService
     {
         await using var connection = new SqlConnection("Data Source=MICHAEL_DESKTOP;Initial Catalog=MSSAProject;Integrated Security=True;Encrypt=True;Trust Server Certificate=True");
 
-        var status = connection.State;
-
-        var sql = "SELECT * FROM Employees";
+        string sql = "SELECT * FROM Employee";
 
         var results = await connection.QueryAsync<Employee>(sql);
 
