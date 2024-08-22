@@ -7,45 +7,43 @@
              x:DataType="viewmodel:EmployeeViewModel"
              Title="{Binding Title}">
 
-    <Grid ColumnDefinitions="*,*"
-          ColumnSpacing="5"
-          RowDefinitions="*,Auto">
+    <Grid ColumnDefinitions="*,Auto"
+          RowDefinitions="Auto,*">
 
-        <CollectionView Background="Transparent"
-                        Grid.ColumnSpan="2"
+        <SearchBar Grid.Row="0"
+                   Grid.Column="0"
+                   Text="Search"
+                   Margin="5">
+
+        </SearchBar>
+
+        <Button Grid.Row="0" 
+                Grid.Column="1"
+                Text="Add Employee"
+                HorizontalOptions="CenterAndExpand"
+                Margin="5"/>
+
+        <CollectionView Grid.ColumnSpan="3"
+                        Grid.Row="1"
+                        Background="Transparent"
                         ItemsSource="{Binding Employees}"
                         SelectionMode="None">
-
+            <CollectionView.ItemsLayout>
+                <GridItemsLayout Orientation="Vertical"
+                             Span="5"
+                             VerticalItemSpacing="3"
+                             HorizontalItemSpacing="3"/>
+            </CollectionView.ItemsLayout>
             <CollectionView.ItemTemplate>
                 <DataTemplate x:DataType="model:Employee">
-                    <Grid Padding="10">
-                        <Frame HeightRequest="125">
-                            <VerticalStackLayout Grid.Column="1"
-                                                 Padding="10"
-                                                 VerticalOptions="Center">
-                                <Label Text="{Binding FirstName}"/>
-                                <Label Text="{Binding LastName}"/>
-                                <Label Text="{Binding StartDate}"/>
-
-                            </VerticalStackLayout>
-                        </Frame>
-                    </Grid>
+                    <Frame MinimumWidthRequest="175">
+                        <VerticalStackLayout VerticalOptions="Center"
+                                         HorizontalOptions="Center">
+                            <Label Text="{Binding NameFormatted}"/>
+                        </VerticalStackLayout>
+                    </Frame>
                 </DataTemplate>
             </CollectionView.ItemTemplate>
         </CollectionView>
-        <Button Text="Get Employees"
-                Command="{Binding GetEmployeesCommand}"
-                IsEnabled="{Binding IsNotBusy}"
-                Grid.Column="0"
-                Grid.Row="1"
-                Margin="8"/>
-
-        <ActivityIndicator IsVisible="{Binding IsBusy}"
-                           IsRunning="{Binding IsBusy}"
-                           HorizontalOptions="FillAndExpand"
-                           VerticalOptions="CenterAndExpand"
-                           Grid.RowSpan="2"
-                           Grid.ColumnSpan="2"/>
     </Grid>
-    
 </ContentPage>

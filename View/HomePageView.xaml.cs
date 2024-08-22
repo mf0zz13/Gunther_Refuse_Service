@@ -1,8 +1,8 @@
 namespace GuntherRefuse.View;
 
-public partial class EmployeeView : ContentPage
+public partial class HomePageView : ContentPage
 {
-	public EmployeeView(EmployeeViewModel viewModel)
+	public HomePageView(HomePageViewModel viewModel)
 	{
 		InitializeComponent();
         BindingContext = viewModel;
