@@ -2,7 +2,7 @@ using Microsoft.Maui;
 using Microsoft.Maui.Hosting;
 using System;
 
-namespace GuntherRefuse
+namespace Gunther_Refuse
 {
     internal class Program : MauiApplication
     {

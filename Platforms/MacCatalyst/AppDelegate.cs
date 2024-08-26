@@ -1,6 +1,6 @@
 ﻿using Foundation;
 
-namespace GuntherRefuse
+namespace Gunther_Refuse
 {
     [Register("AppDelegate")]
     public class AppDelegate : MauiUIApplicationDelegate

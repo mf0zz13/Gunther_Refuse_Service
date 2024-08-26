@@ -1,4 +1,4 @@
-﻿namespace GuntherRefuse
+﻿namespace Gunther_Refuse
 {
     public partial class AppShell : Shell
     {

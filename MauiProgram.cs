@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.Logging;
 
-namespace GuntherRefuse
+namespace Gunther_Refuse
 {
     public static class MauiProgram
     {
@@ -18,21 +18,7 @@ namespace GuntherRefuse
 #if DEBUG
     		builder.Logging.AddDebug();
 #endif
-
-            builder.Services.AddTransient<DispatchService>();
-            builder.Services.AddTransient<DispatchViewModel>();
-            builder.Services.AddTransient<DispatchView>();
-
-            builder.Services.AddSingleton<DispatcherService>();
-            builder.Services.AddSingleton<DispatcherViewModel>();
-            builder.Services.AddSingleton<DispatcherView>();
-
-            builder.Services.AddSingleton<EmployeeService>();
-            builder.Services.AddSingleton<EmployeeViewModel>();
-            builder.Services.AddSingleton<EmployeeView>();
-
-            builder.Services.AddSingleton<HomePageViewModel>();
-            builder.Services.AddSingleton<HomePageView>();
+            builder.Services.AddSingleton<MainView>();
 
             return builder.Build();
         }

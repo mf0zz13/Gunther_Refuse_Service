@@ -1,7 +1,7 @@
 ﻿using Android.App;
 using Android.Runtime;
 
-namespace GuntherRefuse
+namespace Gunther_Refuse
 {
     [Application]
     public class MainApplication : MauiApplication

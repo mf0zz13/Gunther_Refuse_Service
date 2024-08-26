@@ -1,4 +1,4 @@
-﻿namespace GuntherRefuse
+﻿namespace Gunther_Refuse
 {
     public partial class App : Application
     {
@@ -7,8 +7,6 @@
             InitializeComponent();
 
             MainPage = new AppShell();
-
-
         }
     }
 }
