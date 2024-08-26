@@ -30,25 +30,25 @@
     <AppXManifest Include="C:\Users\micha\OneDrive\Documents\C#_code\Gunther Refuse\GuntherRefuse\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-08-26T18:56:21.105</Modified>
+      <Modified>2024-08-26T21:59:28.764</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\micha\OneDrive\Documents\C#_code\Gunther Refuse\GuntherRefuse\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2024-08-26T14:52:25.501</Modified>
+      <Modified>2024-08-26T19:48:36.351</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\micha\OneDrive\Documents\C#_code\Gunther Refuse\GuntherRefuse\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\GuntherRefuse.runtimeconfig.json">
       <PackagePath>GuntherRefuse.runtimeconfig.json</PackagePath>
-      <Modified>2024-08-26T13:29:14.034</Modified>
+      <Modified>2024-08-26T19:48:36.147</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\micha\OneDrive\Documents\C#_code\Gunther Refuse\GuntherRefuse\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\GuntherRefuse.dll">
       <PackagePath>GuntherRefuse.dll</PackagePath>
-      <Modified>2024-08-26T18:56:20.743</Modified>
+      <Modified>2024-08-26T21:59:27.985</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\micha\OneDrive\Documents\C#_code\Gunther Refuse\GuntherRefuse\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>GuntherRefuse.exe</PackagePath>
-      <Modified>2024-08-26T18:56:20.748</Modified>
+      <Modified>2024-08-26T21:59:28.044</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\micha\OneDrive\Documents\C#_code\Gunther Refuse\GuntherRefuse\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
@@ -288,7 +288,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\micha\OneDrive\Documents\C#_code\Gunther Refuse\GuntherRefuse\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\GuntherRefuse.deps.json">
       <PackagePath>GuntherRefuse.deps.json</PackagePath>
-      <Modified>2024-08-26T14:52:25.326</Modified>
+      <Modified>2024-08-26T19:48:36.050</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\micha\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.34\lib\net6.0\Microsoft.Windows.SDK.NET.dll">
       <PackagePath>Microsoft.Windows.SDK.NET.dll</PackagePath>
@@ -505,6 +505,30 @@
     <AppxPackagedFile Include="C:\Users\micha\.nuget\packages\microsoft.windowsappsdk\1.5.240627000\lib\net6.0-windows10.0.18362.0\Microsoft.WindowsAppRuntime.Bootstrap.Net.dll">
       <PackagePath>Microsoft.WindowsAppRuntime.Bootstrap.Net.dll</PackagePath>
       <Modified>2024-06-26T19:15:16.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\micha\.nuget\packages\syncfusion.licensing\26.2.10\lib\net8.0\Syncfusion.Licensing.dll">
+      <PackagePath>Syncfusion.Licensing.dll</PackagePath>
+      <Modified>2024-08-19T08:13:34.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\micha\.nuget\packages\syncfusion.maui.core\26.2.10\lib\net8.0-windows10.0.19041.0\Syncfusion.Maui.Core.dll">
+      <PackagePath>Syncfusion.Maui.Core.dll</PackagePath>
+      <Modified>2024-08-19T08:22:26.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\micha\.nuget\packages\syncfusion.maui.datasource\26.2.10\lib\net8.0-windows10.0.19041.0\Syncfusion.Maui.DataSource.dll">
+      <PackagePath>Syncfusion.Maui.DataSource.dll</PackagePath>
+      <Modified>2024-08-19T08:32:56.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\micha\.nuget\packages\syncfusion.maui.gridcommon\26.2.10\lib\net8.0-windows10.0.19041.0\Syncfusion.Maui.GridCommon.dll">
+      <PackagePath>Syncfusion.Maui.GridCommon.dll</PackagePath>
+      <Modified>2024-08-19T08:33:54.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\micha\.nuget\packages\syncfusion.maui.inputs\26.2.10\lib\net8.0-windows10.0.19041.0\Syncfusion.Maui.Inputs.dll">
+      <PackagePath>Syncfusion.Maui.Inputs.dll</PackagePath>
+      <Modified>2024-08-19T08:41:42.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\micha\.nuget\packages\syncfusion.maui.listview\26.2.10\lib\net8.0-windows10.0.19041.0\Syncfusion.Maui.ListView.dll">
+      <PackagePath>Syncfusion.Maui.ListView.dll</PackagePath>
+      <Modified>2024-08-19T08:35:04.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\micha\.nuget\packages\system.clientmodel\1.0.0\lib\net6.0\System.ClientModel.dll">
       <PackagePath>System.ClientModel.dll</PackagePath>
@@ -729,6 +753,10 @@
     <AppxPackagedFile Include="C:\Users\micha\.nuget\packages\microsoft.maui.core\8.0.80\lib\net8.0-windows10.0.19041\Microsoft.Maui.pri">
       <PackagePath>Microsoft.Maui.pri</PackagePath>
       <Modified>2024-08-06T22:07:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\micha\.nuget\packages\syncfusion.maui.core\26.2.10\lib\net8.0-windows10.0.19041.0\Syncfusion.Maui.Core.pri">
+      <PackagePath>Syncfusion.Maui.Core.pri</PackagePath>
+      <Modified>2024-08-19T08:22:26.000</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

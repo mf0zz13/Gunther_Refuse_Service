@@ -5,16 +5,16 @@ namespace GuntherRefuse.ViewModel;
 [QueryProperty(nameof(Dispatch), nameof(Dispatch))]
 public partial class DispatchViewModel : BaseViewModel
 {
-	Dispatch dispatchRecord;
+    Dispatch dispatchRecord;
 
-	public List<string> CollectionTypes = new() { "Select One", "Trash", "Recycling", "Yard Waste" };
+    public List<string> CollectionTypes { get; } = new() { "Trash", "Recycling", "Yard Waste" };
 
     [ObservableProperty]
-	Dispatch dispatch;
+    Dispatch dispatch;
 
 
-	
-	public DispatchViewModel()
-	{
+
+    public DispatchViewModel()
+    {
     }
 }

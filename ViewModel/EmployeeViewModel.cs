@@ -3,12 +3,13 @@ namespace GuntherRefuse.ViewModel;
 public partial class EmployeeViewModel : BaseViewModel
 {
     EmployeeService employeeService;
-    
+    List<Employee> employees;
+
     public ObservableCollection<Employee> Employees { get; } = new();
 
     public EmployeeViewModel(EmployeeService employeeService)
     {
-       this.employeeService = employeeService;
+        this.employeeService = employeeService;
         this.GetEmployeesAsync();
     }
 
@@ -21,7 +22,7 @@ public partial class EmployeeViewModel : BaseViewModel
         try
         {
             IsBusy = true;
-            List<Employee> employees = await employeeService.GetEmployees();
+            employees = await employeeService.GetEmployees();
 
             Employees.Clear();
             foreach (Employee employee in employees)
@@ -30,7 +31,7 @@ public partial class EmployeeViewModel : BaseViewModel
                 employee.NameFormatted = $"{employee.FirstName.Trim()}, {employee.LastName.Trim()}";
                 Employees.Add(employee);
             }
-            
+
 
         }
         catch (Exception e)
@@ -43,13 +44,4 @@ public partial class EmployeeViewModel : BaseViewModel
             IsBusy = false;
         }
     }
-
-    #if WINDOWS
-
-    #endif
-
-
-
-
-
 }

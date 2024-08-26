@@ -7,15 +7,18 @@
              x:DataType="viewmodel:EmployeeViewModel">
 
     <Grid ColumnDefinitions="*,Auto"
-          RowDefinitions="Auto,*"
-          Margin="5">
+          RowDefinitions="Auto,*">
+        <BoxView Grid.Row="1"
+                 Grid.ColumnSpan="2"
+                 BackgroundColor="#56706f"
+                 CornerRadius="5"/>
 
-        <SearchBar Grid.Row="0"
+        <SearchBar x:Name="EmployeeSearch" 
+                   Grid.Row="0"
                    Grid.Column="0"
-                   Text="Search"
-                   Margin="5">
-
-        </SearchBar>
+                   Margin="5"
+                   Placeholder="Search"
+                   TextChanged="EmployeeSearch_TextChanged"/>
 
         <Button Grid.Row="0" 
                 Grid.Column="1"
@@ -23,7 +26,8 @@
                 HorizontalOptions="CenterAndExpand"
                 Margin="5"/>
 
-        <CollectionView Grid.ColumnSpan="3"
+        <CollectionView x:Name="EmployeeDisplay"
+                        Grid.ColumnSpan="3"
                         Grid.Row="1"
                         Background="Transparent"
                         ItemsSource="{Binding Employees}"

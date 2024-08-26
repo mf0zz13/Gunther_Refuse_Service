@@ -10,3 +10,4 @@ global using GuntherRefuse.Services;
 global using GuntherRefuse.ViewModel;
 global using Microsoft.Data.SqlClient;
 global using Dapper;
+global using Syncfusion.Maui.Core.Hosting;

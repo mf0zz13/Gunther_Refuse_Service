@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "kLCAOhBLmsw=",
+  "dgSpecHash": "dCjHWyhvHx0=",
   "success": true,
   "projectFilePath": "C:\\Users\\micha\\OneDrive\\Documents\\C#_code\\Gunther Refuse\\GuntherRefuse\\GuntherRefuse.csproj",
   "expectedPackageFiles": [
@@ -65,6 +65,12 @@
     "C:\\Users\\micha\\.nuget\\packages\\runtime.unix.system.private.uri\\4.3.0\\runtime.unix.system.private.uri.4.3.0.nupkg.sha512",
     "C:\\Users\\micha\\.nuget\\packages\\runtime.win.system.diagnostics.debug\\4.3.0\\runtime.win.system.diagnostics.debug.4.3.0.nupkg.sha512",
     "C:\\Users\\micha\\.nuget\\packages\\runtime.win7.system.private.uri\\4.3.0\\runtime.win7.system.private.uri.4.3.0.nupkg.sha512",
+    "C:\\Users\\micha\\.nuget\\packages\\syncfusion.licensing\\26.2.10\\syncfusion.licensing.26.2.10.nupkg.sha512",
+    "C:\\Users\\micha\\.nuget\\packages\\syncfusion.maui.core\\26.2.10\\syncfusion.maui.core.26.2.10.nupkg.sha512",
+    "C:\\Users\\micha\\.nuget\\packages\\syncfusion.maui.datasource\\26.2.10\\syncfusion.maui.datasource.26.2.10.nupkg.sha512",
+    "C:\\Users\\micha\\.nuget\\packages\\syncfusion.maui.gridcommon\\26.2.10\\syncfusion.maui.gridcommon.26.2.10.nupkg.sha512",
+    "C:\\Users\\micha\\.nuget\\packages\\syncfusion.maui.inputs\\26.2.10\\syncfusion.maui.inputs.26.2.10.nupkg.sha512",
+    "C:\\Users\\micha\\.nuget\\packages\\syncfusion.maui.listview\\26.2.10\\syncfusion.maui.listview.26.2.10.nupkg.sha512",
     "C:\\Users\\micha\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
     "C:\\Users\\micha\\.nuget\\packages\\system.clientmodel\\1.0.0\\system.clientmodel.1.0.0.nupkg.sha512",
     "C:\\Users\\micha\\.nuget\\packages\\system.configuration.configurationmanager\\8.0.0\\system.configuration.configurationmanager.8.0.0.nupkg.sha512",

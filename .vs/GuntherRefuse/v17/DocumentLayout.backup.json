@@ -3,92 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\micha\\OneDrive\\Documents\\C#_code\\Gunther Refuse\\GuntherRefuse\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5D02BC38-866C-4AC1-AF64-F4C639B1D88D}|GuntherRefuse.csproj|c:\\users\\micha\\onedrive\\documents\\c#_code\\gunther refuse\\guntherrefuse\\view\\dispatchview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{5D02BC38-866C-4AC1-AF64-F4C639B1D88D}|GuntherRefuse.csproj|solutionrelative:view\\dispatchview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5D02BC38-866C-4AC1-AF64-F4C639B1D88D}|GuntherRefuse.csproj|c:\\users\\micha\\onedrive\\documents\\c#_code\\gunther refuse\\guntherrefuse\\viewmodel\\dispatchviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D02BC38-866C-4AC1-AF64-F4C639B1D88D}|GuntherRefuse.csproj|solutionrelative:viewmodel\\dispatchviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5D02BC38-866C-4AC1-AF64-F4C639B1D88D}|GuntherRefuse.csproj|c:\\users\\micha\\onedrive\\documents\\c#_code\\gunther refuse\\guntherrefuse\\viewmodel\\homeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D02BC38-866C-4AC1-AF64-F4C639B1D88D}|GuntherRefuse.csproj|solutionrelative:viewmodel\\homeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5D02BC38-866C-4AC1-AF64-F4C639B1D88D}|GuntherRefuse.csproj|c:\\users\\micha\\onedrive\\documents\\c#_code\\gunther refuse\\guntherrefuse\\view\\dispatchview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D02BC38-866C-4AC1-AF64-F4C639B1D88D}|GuntherRefuse.csproj|solutionrelative:view\\dispatchview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5D02BC38-866C-4AC1-AF64-F4C639B1D88D}|GuntherRefuse.csproj|c:\\users\\micha\\onedrive\\documents\\c#_code\\gunther refuse\\guntherrefuse\\viewmodel\\dispatchtrucksviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D02BC38-866C-4AC1-AF64-F4C639B1D88D}|GuntherRefuse.csproj|solutionrelative:viewmodel\\dispatchtrucksviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5D02BC38-866C-4AC1-AF64-F4C639B1D88D}|GuntherRefuse.csproj|c:\\users\\micha\\onedrive\\documents\\c#_code\\gunther refuse\\guntherrefuse\\view\\dispatchtrucksview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D02BC38-866C-4AC1-AF64-F4C639B1D88D}|GuntherRefuse.csproj|solutionrelative:view\\dispatchtrucksview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5D02BC38-866C-4AC1-AF64-F4C639B1D88D}|GuntherRefuse.csproj|c:\\users\\micha\\onedrive\\documents\\c#_code\\gunther refuse\\guntherrefuse\\services\\trucksservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D02BC38-866C-4AC1-AF64-F4C639B1D88D}|GuntherRefuse.csproj|solutionrelative:services\\trucksservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5D02BC38-866C-4AC1-AF64-F4C639B1D88D}|GuntherRefuse.csproj|c:\\users\\micha\\onedrive\\documents\\c#_code\\gunther refuse\\guntherrefuse\\view\\homeview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D02BC38-866C-4AC1-AF64-F4C639B1D88D}|GuntherRefuse.csproj|solutionrelative:view\\homeview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5D02BC38-866C-4AC1-AF64-F4C639B1D88D}|GuntherRefuse.csproj|c:\\users\\micha\\onedrive\\documents\\c#_code\\gunther refuse\\guntherrefuse\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{5D02BC38-866C-4AC1-AF64-F4C639B1D88D}|GuntherRefuse.csproj|solutionrelative:appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5D02BC38-866C-4AC1-AF64-F4C639B1D88D}|GuntherRefuse.csproj|c:\\users\\micha\\onedrive\\documents\\c#_code\\gunther refuse\\guntherrefuse\\view\\homeview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{5D02BC38-866C-4AC1-AF64-F4C639B1D88D}|GuntherRefuse.csproj|solutionrelative:view\\homeview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5D02BC38-866C-4AC1-AF64-F4C639B1D88D}|GuntherRefuse.csproj|c:\\users\\micha\\onedrive\\documents\\c#_code\\gunther refuse\\guntherrefuse\\services\\dispatchrecordsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D02BC38-866C-4AC1-AF64-F4C639B1D88D}|GuntherRefuse.csproj|solutionrelative:services\\dispatchrecordsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5D02BC38-866C-4AC1-AF64-F4C639B1D88D}|GuntherRefuse.csproj|c:\\users\\micha\\onedrive\\documents\\c#_code\\gunther refuse\\guntherrefuse\\view\\employeeview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{5D02BC38-866C-4AC1-AF64-F4C639B1D88D}|GuntherRefuse.csproj|solutionrelative:view\\employeeview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5D02BC38-866C-4AC1-AF64-F4C639B1D88D}|GuntherRefuse.csproj|c:\\users\\micha\\onedrive\\documents\\c#_code\\gunther refuse\\guntherrefuse\\viewmodel\\employeeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5D02BC38-866C-4AC1-AF64-F4C639B1D88D}|GuntherRefuse.csproj|solutionrelative:viewmodel\\employeeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5D02BC38-866C-4AC1-AF64-F4C639B1D88D}|GuntherRefuse.csproj|c:\\users\\micha\\onedrive\\documents\\c#_code\\gunther refuse\\guntherrefuse\\guntherrefuse.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{5D02BC38-866C-4AC1-AF64-F4C639B1D88D}|GuntherRefuse.csproj|solutionrelative:guntherrefuse.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5D02BC38-866C-4AC1-AF64-F4C639B1D88D}|GuntherRefuse.csproj|c:\\users\\micha\\onedrive\\documents\\c#_code\\gunther refuse\\guntherrefuse\\model\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D02BC38-866C-4AC1-AF64-F4C639B1D88D}|GuntherRefuse.csproj|solutionrelative:model\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5D02BC38-866C-4AC1-AF64-F4C639B1D88D}|GuntherRefuse.csproj|c:\\users\\micha\\onedrive\\documents\\c#_code\\gunther refuse\\guntherrefuse\\services\\employeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D02BC38-866C-4AC1-AF64-F4C639B1D88D}|GuntherRefuse.csproj|solutionrelative:services\\employeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5D02BC38-866C-4AC1-AF64-F4C639B1D88D}|GuntherRefuse.csproj|c:\\users\\micha\\onedrive\\documents\\c#_code\\gunther refuse\\guntherrefuse\\view\\employeeview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5D02BC38-866C-4AC1-AF64-F4C639B1D88D}|GuntherRefuse.csproj|solutionrelative:view\\employeeview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5D02BC38-866C-4AC1-AF64-F4C639B1D88D}|GuntherRefuse.csproj|c:\\users\\micha\\onedrive\\documents\\c#_code\\gunther refuse\\guntherrefuse\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D02BC38-866C-4AC1-AF64-F4C639B1D88D}|GuntherRefuse.csproj|solutionrelative:mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5D02BC38-866C-4AC1-AF64-F4C639B1D88D}|GuntherRefuse.csproj|c:\\users\\micha\\onedrive\\documents\\c#_code\\gunther refuse\\guntherrefuse\\viewmodel\\homeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D02BC38-866C-4AC1-AF64-F4C639B1D88D}|GuntherRefuse.csproj|solutionrelative:viewmodel\\homeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5D02BC38-866C-4AC1-AF64-F4C639B1D88D}|GuntherRefuse.csproj|c:\\users\\micha\\onedrive\\documents\\c#_code\\gunther refuse\\guntherrefuse\\view\\employeeview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{5D02BC38-866C-4AC1-AF64-F4C639B1D88D}|GuntherRefuse.csproj|solutionrelative:view\\employeeview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{5D02BC38-866C-4AC1-AF64-F4C639B1D88D}|GuntherRefuse.csproj|c:\\users\\micha\\onedrive\\documents\\c#_code\\gunther refuse\\guntherrefuse\\view\\homeview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{5D02BC38-866C-4AC1-AF64-F4C639B1D88D}|GuntherRefuse.csproj|solutionrelative:view\\homeview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5D02BC38-866C-4AC1-AF64-F4C639B1D88D}|GuntherRefuse.csproj|c:\\users\\micha\\onedrive\\documents\\c#_code\\gunther refuse\\guntherrefuse\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{5D02BC38-866C-4AC1-AF64-F4C639B1D88D}|GuntherRefuse.csproj|solutionrelative:app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5D02BC38-866C-4AC1-AF64-F4C639B1D88D}|GuntherRefuse.csproj|c:\\users\\micha\\onedrive\\documents\\c#_code\\gunther refuse\\guntherrefuse\\appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D02BC38-866C-4AC1-AF64-F4C639B1D88D}|GuntherRefuse.csproj|solutionrelative:appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5D02BC38-866C-4AC1-AF64-F4C639B1D88D}|GuntherRefuse.csproj|c:\\users\\micha\\onedrive\\documents\\c#_code\\gunther refuse\\guntherrefuse\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D02BC38-866C-4AC1-AF64-F4C639B1D88D}|GuntherRefuse.csproj|solutionrelative:app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5D02BC38-866C-4AC1-AF64-F4C639B1D88D}|GuntherRefuse.csproj|c:\\users\\micha\\onedrive\\documents\\c#_code\\gunther refuse\\guntherrefuse\\viewmodel\\baseviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D02BC38-866C-4AC1-AF64-F4C639B1D88D}|GuntherRefuse.csproj|solutionrelative:viewmodel\\baseviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5D02BC38-866C-4AC1-AF64-F4C639B1D88D}|GuntherRefuse.csproj|c:\\users\\micha\\onedrive\\documents\\c#_code\\gunther refuse\\guntherrefuse\\services\\employeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D02BC38-866C-4AC1-AF64-F4C639B1D88D}|GuntherRefuse.csproj|solutionrelative:services\\employeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -98,315 +34,107 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 4,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "DispatchTrucksView.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\micha\\OneDrive\\Documents\\C#_code\\Gunther Refuse\\GuntherRefuse\\View\\DispatchTrucksView.xaml.cs",
-              "RelativeDocumentMoniker": "View\\DispatchTrucksView.xaml.cs",
-              "ToolTip": "C:\\Users\\micha\\OneDrive\\Documents\\C#_code\\Gunther Refuse\\GuntherRefuse\\View\\DispatchTrucksView.xaml.cs",
-              "RelativeToolTip": "View\\DispatchTrucksView.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-26T15:15:19.259Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "AppShell.xaml",
-              "DocumentMoniker": "C:\\Users\\micha\\OneDrive\\Documents\\C#_code\\Gunther Refuse\\GuntherRefuse\\AppShell.xaml",
-              "RelativeDocumentMoniker": "AppShell.xaml",
-              "ToolTip": "C:\\Users\\micha\\OneDrive\\Documents\\C#_code\\Gunther Refuse\\GuntherRefuse\\AppShell.xaml",
-              "RelativeToolTip": "AppShell.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-08-26T14:50:43.038Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "HomeViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\micha\\OneDrive\\Documents\\C#_code\\Gunther Refuse\\GuntherRefuse\\ViewModel\\HomeViewModel.cs",
-              "RelativeDocumentMoniker": "ViewModel\\HomeViewModel.cs",
-              "ToolTip": "C:\\Users\\micha\\OneDrive\\Documents\\C#_code\\Gunther Refuse\\GuntherRefuse\\ViewModel\\HomeViewModel.cs",
-              "RelativeToolTip": "ViewModel\\HomeViewModel.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAEwCEAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-26T14:04:45.664Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "DispatchViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\micha\\OneDrive\\Documents\\C#_code\\Gunther Refuse\\GuntherRefuse\\ViewModel\\DispatchViewModel.cs",
-              "RelativeDocumentMoniker": "ViewModel\\DispatchViewModel.cs",
-              "ToolTip": "C:\\Users\\micha\\OneDrive\\Documents\\C#_code\\Gunther Refuse\\GuntherRefuse\\ViewModel\\DispatchViewModel.cs",
-              "RelativeToolTip": "ViewModel\\DispatchViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-26T17:44:27.324Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "TrucksService.cs",
-              "DocumentMoniker": "C:\\Users\\micha\\OneDrive\\Documents\\C#_code\\Gunther Refuse\\GuntherRefuse\\Services\\TrucksService.cs",
-              "RelativeDocumentMoniker": "Services\\TrucksService.cs",
-              "ToolTip": "C:\\Users\\micha\\OneDrive\\Documents\\C#_code\\Gunther Refuse\\GuntherRefuse\\Services\\TrucksService.cs",
-              "RelativeToolTip": "Services\\TrucksService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-26T15:08:41.167Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "DispatchView.xaml",
-              "DocumentMoniker": "C:\\Users\\micha\\OneDrive\\Documents\\C#_code\\Gunther Refuse\\GuntherRefuse\\View\\DispatchView.xaml",
-              "RelativeDocumentMoniker": "View\\DispatchView.xaml",
-              "ToolTip": "C:\\Users\\micha\\OneDrive\\Documents\\C#_code\\Gunther Refuse\\GuntherRefuse\\View\\DispatchView.xaml",
-              "RelativeToolTip": "View\\DispatchView.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-08-26T17:28:27.44Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "DispatchView.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\micha\\OneDrive\\Documents\\C#_code\\Gunther Refuse\\GuntherRefuse\\View\\DispatchView.xaml.cs",
-              "RelativeDocumentMoniker": "View\\DispatchView.xaml.cs",
-              "ToolTip": "C:\\Users\\micha\\OneDrive\\Documents\\C#_code\\Gunther Refuse\\GuntherRefuse\\View\\DispatchView.xaml.cs",
-              "RelativeToolTip": "View\\DispatchView.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-26T14:50:56.205Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "DispatchTrucksViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\micha\\OneDrive\\Documents\\C#_code\\Gunther Refuse\\GuntherRefuse\\ViewModel\\DispatchTrucksViewModel.cs",
-              "RelativeDocumentMoniker": "ViewModel\\DispatchTrucksViewModel.cs",
-              "ToolTip": "C:\\Users\\micha\\OneDrive\\Documents\\C#_code\\Gunther Refuse\\GuntherRefuse\\ViewModel\\DispatchTrucksViewModel.cs",
-              "RelativeToolTip": "ViewModel\\DispatchTrucksViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-26T17:50:59.899Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "HomeView.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\micha\\OneDrive\\Documents\\C#_code\\Gunther Refuse\\GuntherRefuse\\View\\HomeView.xaml.cs",
-              "RelativeDocumentMoniker": "View\\HomeView.xaml.cs",
-              "ToolTip": "C:\\Users\\micha\\OneDrive\\Documents\\C#_code\\Gunther Refuse\\GuntherRefuse\\View\\HomeView.xaml.cs",
-              "RelativeToolTip": "View\\HomeView.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-26T14:31:04.545Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "HomeView.xaml",
-              "DocumentMoniker": "C:\\Users\\micha\\OneDrive\\Documents\\C#_code\\Gunther Refuse\\GuntherRefuse\\View\\HomeView.xaml",
-              "RelativeDocumentMoniker": "View\\HomeView.xaml",
-              "ToolTip": "C:\\Users\\micha\\OneDrive\\Documents\\C#_code\\Gunther Refuse\\GuntherRefuse\\View\\HomeView.xaml",
-              "RelativeToolTip": "View\\HomeView.xaml",
-              "ViewState": "AgIAABQAAAAAAAAAAAAEwB8AAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-08-26T14:53:26.009Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "DispatchRecordsService.cs",
-              "DocumentMoniker": "C:\\Users\\micha\\OneDrive\\Documents\\C#_code\\Gunther Refuse\\GuntherRefuse\\Services\\DispatchRecordsService.cs",
-              "RelativeDocumentMoniker": "Services\\DispatchRecordsService.cs",
-              "ToolTip": "C:\\Users\\micha\\OneDrive\\Documents\\C#_code\\Gunther Refuse\\GuntherRefuse\\Services\\DispatchRecordsService.cs",
-              "RelativeToolTip": "Services\\DispatchRecordsService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-26T14:13:43.39Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "EmployeeViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\micha\\OneDrive\\Documents\\C#_code\\Gunther Refuse\\GuntherRefuse\\ViewModel\\EmployeeViewModel.cs",
-              "RelativeDocumentMoniker": "ViewModel\\EmployeeViewModel.cs",
-              "ToolTip": "C:\\Users\\micha\\OneDrive\\Documents\\C#_code\\Gunther Refuse\\GuntherRefuse\\ViewModel\\EmployeeViewModel.cs",
-              "RelativeToolTip": "ViewModel\\EmployeeViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-26T16:22:30.302Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "GuntherRefuse.csproj",
-              "DocumentMoniker": "C:\\Users\\micha\\OneDrive\\Documents\\C#_code\\Gunther Refuse\\GuntherRefuse\\GuntherRefuse.csproj",
-              "RelativeDocumentMoniker": "GuntherRefuse.csproj",
-              "ToolTip": "C:\\Users\\micha\\OneDrive\\Documents\\C#_code\\Gunther Refuse\\GuntherRefuse\\GuntherRefuse.csproj",
-              "RelativeToolTip": "GuntherRefuse.csproj",
-              "ViewState": "AgIAADMAAAAAAAAAAAAtwFYAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-08-26T15:11:36.421Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Employee.cs",
-              "DocumentMoniker": "C:\\Users\\micha\\OneDrive\\Documents\\C#_code\\Gunther Refuse\\GuntherRefuse\\Model\\Employee.cs",
-              "RelativeDocumentMoniker": "Model\\Employee.cs",
-              "ToolTip": "C:\\Users\\micha\\OneDrive\\Documents\\C#_code\\Gunther Refuse\\GuntherRefuse\\Model\\Employee.cs",
-              "RelativeToolTip": "Model\\Employee.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-26T16:02:10.52Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
               "Title": "EmployeeService.cs",
               "DocumentMoniker": "C:\\Users\\micha\\OneDrive\\Documents\\C#_code\\Gunther Refuse\\GuntherRefuse\\Services\\EmployeeService.cs",
               "RelativeDocumentMoniker": "Services\\EmployeeService.cs",
               "ToolTip": "C:\\Users\\micha\\OneDrive\\Documents\\C#_code\\Gunther Refuse\\GuntherRefuse\\Services\\EmployeeService.cs",
               "RelativeToolTip": "Services\\EmployeeService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABdAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-26T15:08:39.42Z"
+              "WhenOpened": "2024-08-26T21:34:20.254Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 4,
+              "Title": "HomeView.xaml",
+              "DocumentMoniker": "C:\\Users\\micha\\OneDrive\\Documents\\C#_code\\Gunther Refuse\\GuntherRefuse\\View\\HomeView.xaml",
+              "RelativeDocumentMoniker": "View\\HomeView.xaml",
+              "ToolTip": "C:\\Users\\micha\\OneDrive\\Documents\\C#_code\\Gunther Refuse\\GuntherRefuse\\View\\HomeView.xaml",
+              "RelativeToolTip": "View\\HomeView.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-08-26T21:34:13.946Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "HomeViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\micha\\OneDrive\\Documents\\C#_code\\Gunther Refuse\\GuntherRefuse\\ViewModel\\HomeViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModel\\HomeViewModel.cs",
+              "ToolTip": "C:\\Users\\micha\\OneDrive\\Documents\\C#_code\\Gunther Refuse\\GuntherRefuse\\ViewModel\\HomeViewModel.cs",
+              "RelativeToolTip": "ViewModel\\HomeViewModel.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-26T21:34:09.107Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "EmployeeView.xaml.cs",
               "DocumentMoniker": "C:\\Users\\micha\\OneDrive\\Documents\\C#_code\\Gunther Refuse\\GuntherRefuse\\View\\EmployeeView.xaml.cs",
               "RelativeDocumentMoniker": "View\\EmployeeView.xaml.cs",
               "ToolTip": "C:\\Users\\micha\\OneDrive\\Documents\\C#_code\\Gunther Refuse\\GuntherRefuse\\View\\EmployeeView.xaml.cs",
               "RelativeToolTip": "View\\EmployeeView.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABwAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-26T15:10:16.797Z"
+              "WhenOpened": "2024-08-26T20:26:59.806Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "App.xaml",
-              "DocumentMoniker": "C:\\Users\\micha\\OneDrive\\Documents\\C#_code\\Gunther Refuse\\GuntherRefuse\\App.xaml",
-              "RelativeDocumentMoniker": "App.xaml",
-              "ToolTip": "C:\\Users\\micha\\OneDrive\\Documents\\C#_code\\Gunther Refuse\\GuntherRefuse\\App.xaml",
-              "RelativeToolTip": "App.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-08-26T14:51:41.123Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "MauiProgram.cs",
-              "DocumentMoniker": "C:\\Users\\micha\\OneDrive\\Documents\\C#_code\\Gunther Refuse\\GuntherRefuse\\MauiProgram.cs",
-              "RelativeDocumentMoniker": "MauiProgram.cs",
-              "ToolTip": "C:\\Users\\micha\\OneDrive\\Documents\\C#_code\\Gunther Refuse\\GuntherRefuse\\MauiProgram.cs",
-              "RelativeToolTip": "MauiProgram.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAA2AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-26T14:49:25.797Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "AppShell.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\micha\\OneDrive\\Documents\\C#_code\\Gunther Refuse\\GuntherRefuse\\AppShell.xaml.cs",
-              "RelativeDocumentMoniker": "AppShell.xaml.cs",
-              "ToolTip": "C:\\Users\\micha\\OneDrive\\Documents\\C#_code\\Gunther Refuse\\GuntherRefuse\\AppShell.xaml.cs",
-              "RelativeToolTip": "AppShell.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-26T14:51:22.229Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "App.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\micha\\OneDrive\\Documents\\C#_code\\Gunther Refuse\\GuntherRefuse\\App.xaml.cs",
-              "RelativeDocumentMoniker": "App.xaml.cs",
-              "ToolTip": "C:\\Users\\micha\\OneDrive\\Documents\\C#_code\\Gunther Refuse\\GuntherRefuse\\App.xaml.cs",
-              "RelativeToolTip": "App.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-26T14:51:51.708Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "BaseViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\micha\\OneDrive\\Documents\\C#_code\\Gunther Refuse\\GuntherRefuse\\ViewModel\\BaseViewModel.cs",
-              "RelativeDocumentMoniker": "ViewModel\\BaseViewModel.cs",
-              "ToolTip": "C:\\Users\\micha\\OneDrive\\Documents\\C#_code\\Gunther Refuse\\GuntherRefuse\\ViewModel\\BaseViewModel.cs",
-              "RelativeToolTip": "ViewModel\\BaseViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-26T14:10:46.221Z"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "Orientation": 0,
-      "VerticalTabListWidth": 256,
-      "FloatingWindowState": {
-        "Id": "826724cc-3d6c-4326-a6cd-436065a3648e",
-        "Display": 1,
-        "X": 9,
-        "Y": 140,
-        "Width": 1255,
-        "Height": 720,
-        "WindowState": 2
-      },
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 0,
               "Title": "EmployeeView.xaml",
               "DocumentMoniker": "C:\\Users\\micha\\OneDrive\\Documents\\C#_code\\Gunther Refuse\\GuntherRefuse\\View\\EmployeeView.xaml",
               "RelativeDocumentMoniker": "View\\EmployeeView.xaml",
               "ToolTip": "C:\\Users\\micha\\OneDrive\\Documents\\C#_code\\Gunther Refuse\\GuntherRefuse\\View\\EmployeeView.xaml",
               "RelativeToolTip": "View\\EmployeeView.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAA1AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-08-26T14:54:03.812Z",
+              "WhenOpened": "2024-08-26T19:54:39.312Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EmployeeViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\micha\\OneDrive\\Documents\\C#_code\\Gunther Refuse\\GuntherRefuse\\ViewModel\\EmployeeViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModel\\EmployeeViewModel.cs",
+              "ToolTip": "C:\\Users\\micha\\OneDrive\\Documents\\C#_code\\Gunther Refuse\\GuntherRefuse\\ViewModel\\EmployeeViewModel.cs",
+              "RelativeToolTip": "ViewModel\\EmployeeViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-26T19:54:44.908Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{f2e84780-2af1-11d1-a7fa-00a0c9110051}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0504ff91-9d61-11d0-a794-00a0c9110051}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{4a18f9d0-b838-11d0-93eb-00a0c90f2734}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{90243340-bd7a-11d0-93ef-00a0c90f2734}"
             }
           ]
         }
