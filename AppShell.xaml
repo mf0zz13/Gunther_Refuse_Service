@@ -1,15 +1,30 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<Shell
-    x:Class="Gunther_Refuse.AppShell"
-    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:view="clr-namespace:Gunther_Refuse.Views"
-    Shell.FlyoutBehavior="Disabled"
-    Title="Gunther_Refuse">
+<Shell x:Class="GuntherRefuse.AppShell"
+       xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       xmlns:view="clr-namespace:GuntherRefuse.View"
+       Shell.FlyoutBehavior="Flyout"
+       Shell.FlyoutBackdrop="#56706f"
+       Title="Gunther Refuse"
+       Shell.NavBarIsVisible="False">
 
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate view:MainView}"
-        Route="MainPage" />
+    <FlyoutItem Title="Home">
+        <Tab>
+            <ShellContent ContentTemplate="{DataTemplate view:HomeView}"/>
+        </Tab>
+    </FlyoutItem>
+    <FlyoutItem Title="Dispatch Trucks">
+        <Tab>
+            <ShellContent ContentTemplate="{DataTemplate view:DispatchTrucksView}"/>
+        </Tab>
+    </FlyoutItem>
+    <FlyoutItem Title="Manage Employees">
+        <Tab>
+            <ShellContent ContentTemplate="{DataTemplate view:EmployeeView}"/>
+        </Tab>
+    </FlyoutItem>
+    
+    
+    
 
 </Shell>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage x:Class="GuntherRefuse.View.EmployeeView"
+             xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodel="clr-namespace:GuntherRefuse.ViewModel"
+             xmlns:model="clr-namespace:GuntherRefuse.Model"
+             x:DataType="viewmodel:EmployeeViewModel">
+
+    <Grid ColumnDefinitions="*,Auto"
+          RowDefinitions="Auto,*"
+          Margin="5">
+
+        <SearchBar Grid.Row="0"
+                   Grid.Column="0"
+                   Text="Search"
+                   Margin="5">
+
+        </SearchBar>
+
+        <Button Grid.Row="0" 
+                Grid.Column="1"
+                Text="Add Employee"
+                HorizontalOptions="CenterAndExpand"
+                Margin="5"/>
+
+        <CollectionView Grid.ColumnSpan="3"
+                        Grid.Row="1"
+                        Background="Transparent"
+                        ItemsSource="{Binding Employees}"
+                        SelectionMode="None">
+            <CollectionView.ItemsLayout>
+                <GridItemsLayout Orientation="Vertical"
+                             Span="5"
+                             VerticalItemSpacing="3"
+                             HorizontalItemSpacing="3"/>
+            </CollectionView.ItemsLayout>
+            <CollectionView.ItemTemplate>
+                <DataTemplate x:DataType="model:Employee">
+                    <Frame MinimumWidthRequest="175">
+                        <VerticalStackLayout VerticalOptions="Center"
+                                         HorizontalOptions="Center">
+                            <Label Text="{Binding NameFormatted}"/>
+                        </VerticalStackLayout>
+                    </Frame>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </Grid>
+</ContentPage>

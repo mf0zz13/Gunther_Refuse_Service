@@ -1,7 +1,7 @@
 ﻿using ObjCRuntime;
 using UIKit;
 
-namespace Gunther_Refuse
+namespace GuntherRefuse
 {
     public class Program
     {

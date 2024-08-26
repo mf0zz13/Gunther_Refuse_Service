@@ -8,24 +8,24 @@
     For more information on package manifest files, see http://go.microsoft.com/fwlink/?LinkID=241727
   -->
   <Identity Name="com.companyname.guntherrefuse" Publisher="CN=User Name" Version="1.0.0.1" ProcessorArchitecture="x64" />
-  <mp:PhoneIdentity PhoneProductId="A7409E21-F0AB-4A88-AC6D-72489762DBA7" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
+  <mp:PhoneIdentity PhoneProductId="FD4F4287-B323-40EE-A838-CF098312D2B8" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
-    <DisplayName>Gunther Refuse</DisplayName>
+    <DisplayName>GuntherRefuse</DisplayName>
     <PublisherDisplayName>User Name</PublisherDisplayName>
     <Logo>appiconStoreLogo.png</Logo>
   </Properties>
   <Dependencies>
     <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.17763.0" MaxVersionTested="10.0.19041.0" />
     <TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.17763.0" MaxVersionTested="10.0.19041.0" />
-    <PackageDependency Name="Microsoft.WindowsAppRuntime.1.5" MinVersion="5001.159.55.0" Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" />
+    <PackageDependency Name="Microsoft.WindowsAppRuntime.1.5" MinVersion="5001.178.1908.0" Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" />
   </Dependencies>
   <Resources>
     <Resource Language="EN-US" />
   </Resources>
   <Applications>
-    <Application Id="App" Executable="Gunther Refuse.exe" EntryPoint="Windows.FullTrustApplication">
-      <uap:VisualElements DisplayName="Gunther Refuse" Description="Gunther Refuse" Square150x150Logo="appiconMediumTile.png" Square44x44Logo="appiconLogo.png" BackgroundColor="transparent">
-        <uap:DefaultTile Square71x71Logo="appiconSmallTile.png" Wide310x150Logo="appiconWideTile.png" Square310x310Logo="appiconLargeTile.png" ShortName="Gunther Refuse">
+    <Application Id="App" Executable="GuntherRefuse.exe" EntryPoint="Windows.FullTrustApplication">
+      <uap:VisualElements DisplayName="GuntherRefuse" Description="GuntherRefuse" Square150x150Logo="appiconMediumTile.png" Square44x44Logo="appiconLogo.png" BackgroundColor="transparent">
+        <uap:DefaultTile Square71x71Logo="appiconSmallTile.png" Wide310x150Logo="appiconWideTile.png" Square310x310Logo="appiconLargeTile.png" ShortName="GuntherRefuse">
           <uap:ShowNameOnTiles>
             <uap:ShowOn Tile="square150x150Logo" />
             <uap:ShowOn Tile="wide310x150Logo" />
