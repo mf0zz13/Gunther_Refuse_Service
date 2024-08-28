@@ -4,12 +4,29 @@ public partial class HomeViewModel : BaseViewModel
 {
     GetNumberOfDispatchedTrucks getTruckService;
     List<Dispatch> records;
+    DateTime currTime = DateTime.Now;
+    string properGreetingOftheDay;
+    string name = "Mike";
 
     public ObservableCollection<Dispatch> DispatchRecords { get; } = new();
 
-
     public HomeViewModel(GetNumberOfDispatchedTrucks getTruckService)
     {
+        switch (currTime.Hour)
+        {
+            case int i when i >= 0 && i <= 11:
+                properGreetingOftheDay = "Good Morning,";
+                break;
+            case int i when i >= 12 && i <= 16:
+                properGreetingOftheDay = "Good Afternoon,";
+                break;
+            default:
+                properGreetingOftheDay = "Good Evening,";
+                break;
+
+        }
+
+        Title = $"{properGreetingOftheDay} {name}";
         this.getTruckService = getTruckService;
         this.GetNumberOfTrucks();
     }
@@ -25,7 +42,7 @@ public partial class HomeViewModel : BaseViewModel
             IsBusy = true;
 
             records = await getTruckService.GetNumberOfRecords();
-            
+
             foreach (Dispatch record in records)
             {
                 DispatchRecords.Add(record);

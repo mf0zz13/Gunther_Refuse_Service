@@ -23,7 +23,7 @@
                FontSize="32"
                FontAttributes="Bold"
                TextColor="White"
-               Text="Hello"/>
+               Text="{Binding Title}"/>
 
         <StackLayout Grid.Row="1"
                      Padding="10"
