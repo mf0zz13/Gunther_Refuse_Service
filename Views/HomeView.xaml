@@ -137,7 +137,7 @@
                                         FontSize="20"
                                         Background="#56706f"
                                         TextColor="White"
-                                        Text="Truck Status"/>
+                                        Text="Fleet Status"/>
                             
                                 <Button Grid.Row="3"
                                         HorizontalOptions="CenterAndExpand"
