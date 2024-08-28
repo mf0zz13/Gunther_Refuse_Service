@@ -24,15 +24,124 @@
                Text="Hello"/>
 
         <StackLayout Grid.Row="1"
-                     Padding="10">
+                     Padding="10"
+                     Spacing="20">
 
-            <Frame>
-                <Label Text="test"/>
-            </Frame>
-            
+            <Border BackgroundColor="White"
+                    Stroke="#56706f"
+                    HeightRequest="150"
+                    StrokeThickness="5">
+
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="10,10,10,10"/>
+                </Border.StrokeShape>
+
+                <Border.Shadow>
+                    <Shadow Brush="Black"
+                            Offset="10,10"
+                            Radius="10"
+                            Opacity=".5"/>
+                </Border.Shadow>
+
+                <Grid RowDefinitions="Auto,*"
+                      RowSpacing="15">
+
+                    <Label Grid.Row="0"
+                           Padding="10"
+                           BackgroundColor="#56706f"
+                           FontSize="26"
+                           FontAttributes="Bold"
+                           TextColor="White"
+                           VerticalOptions="CenterAndExpand"
+                           Text="Current Operations"/>
+
+                    <VerticalStackLayout Grid.Row="1">
+                        <Label HorizontalOptions="CenterAndExpand"
+                                   FontAttributes="Bold"
+                                   FontSize="26"
+                                   TextColor="Black"
+                                   Text="Trucks Dispatched"/>
+
+                        <Label HorizontalOptions="CenterAndExpand"
+                                   FontAttributes="Bold"
+                                   FontSize="26"
+                                   TextColor="Black"
+                                   Text="10"/>
+                    </VerticalStackLayout>
+
+                </Grid>
+
+            </Border>
+
+            <Border BackgroundColor="White"
+                    Stroke="#56706f"
+                    HeightRequest="275"
+                    StrokeThickness="5">
+
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="10,10,10,10"/>
+                </Border.StrokeShape>
+
+                <Border.Shadow>
+                    <Shadow Brush="Black"
+                            Offset="10,10"
+                            Radius="10"
+                            Opacity=".5"/>
+                </Border.Shadow>
+
+                <Grid RowDefinitions="Auto,*"
+                      RowSpacing="15">
+
+                    <Label Grid.Row="0"
+                           Padding="10"
+                           BackgroundColor="#56706f"
+                           FontSize="26"
+                           FontAttributes="Bold"
+                           TextColor="White"
+                           VerticalOptions="CenterAndExpand"
+                           Text="Management"/>
+
+                    <VerticalStackLayout Grid.Row="1"
+                                         Spacing="10">
+
+                        <Grid RowDefinitions="*,*,*"
+                              RowSpacing="10"
+                              Padding="10,10,10,10">
+
+                            
+
+                                <Button Grid.Row="0"
+                                        HorizontalOptions="CenterAndExpand"
+                                        WidthRequest="215"
+                                        FontAttributes="Bold"
+                                        FontSize="20"
+                                        Background="#56706f"
+                                        TextColor="White"
+                                        Text="Dispatch Trucks"/>
+                        
+                                <Button Grid.Row="1"
+                                        HorizontalOptions="CenterAndExpand"
+                                        WidthRequest="215"
+                                        FontAttributes="Bold"
+                                        FontSize="20"
+                                        Background="#56706f"
+                                        TextColor="White"
+                                        Text="Manage Employees"/>
+
+                                <Button Grid.Row="2"
+                                        HorizontalOptions="CenterAndExpand"
+                                        WidthRequest="215"
+                                        FontAttributes="Bold"
+                                        FontSize="20"
+                                        Background="#56706f"
+                                        TextColor="White"
+                                        Text="Dispatch Records"/>
+
+
+                        </Grid>
+                    </VerticalStackLayout>
+                </Grid>
+            </Border>
         </StackLayout>
     </Grid>
-
-
-
 </ContentPage>
