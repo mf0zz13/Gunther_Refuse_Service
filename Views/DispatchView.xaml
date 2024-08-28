@@ -172,7 +172,9 @@
                 </Grid>
             </Border>
 
-            <Border Stroke="#56706f"
+            <Border x:Name="ThrowerThree"
+                    IsVisible="{Binding IsChecked}"
+                    Stroke="#56706f"
                     StrokeThickness="5"
                     BackgroundColor="White">
                 <Border.StrokeShape>
@@ -215,7 +217,8 @@
                           HorizontalOptions="Start"
                           Grid.Column="1"
                           MaximumWidthRequest="40"
-                          MaximumHeightRequest="40"/>
+                          MaximumHeightRequest="40"
+                          CheckedChanged="CheckBox_CheckedChanged"/>
             </Grid>
 
             <Border Stroke="#56706f"

@@ -6,6 +6,9 @@
         [ObservableProperty]
         Truck truck;
 
+        [ObservableProperty]
+        bool isChecked;
+
         public DispatchViewModel()
         {
         }
