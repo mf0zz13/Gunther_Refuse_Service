@@ -18,7 +18,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GuntherRefuse")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+859eb962e3e692634ff8575b91651585ffc736b7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+57840098c649add0a04392026ac3f8d549be4525")]
 [assembly: System.Reflection.AssemblyProductAttribute("GuntherRefuse")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GuntherRefuse")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

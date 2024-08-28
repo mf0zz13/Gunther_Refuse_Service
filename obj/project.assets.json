@@ -58114,11 +58114,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\micha\\OneDrive\\Documents\\C#_code\\GuntherRefuse\\GuntherRefuse.csproj",
+      "projectUniqueName": "C:\\Users\\micha\\OneDrive\\Documents\\GuntherRefuse\\GuntherRefuse.csproj",
       "projectName": "GuntherRefuse",
-      "projectPath": "C:\\Users\\micha\\OneDrive\\Documents\\C#_code\\GuntherRefuse\\GuntherRefuse.csproj",
+      "projectPath": "C:\\Users\\micha\\OneDrive\\Documents\\GuntherRefuse\\GuntherRefuse.csproj",
       "packagesPath": "C:\\Users\\micha\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\micha\\OneDrive\\Documents\\C#_code\\GuntherRefuse\\obj\\",
+      "outputPath": "C:\\Users\\micha\\OneDrive\\Documents\\GuntherRefuse\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "fallbackFolders": [
