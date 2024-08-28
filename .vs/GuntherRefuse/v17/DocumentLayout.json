@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\micha\\OneDrive\\Documents\\GuntherRefuse\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B30E05F1-292A-43F5-B983-4F6D64CD8A50}|GuntherRefuse.csproj|c:\\users\\micha\\onedrive\\documents\\guntherrefuse\\views\\homeview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{B30E05F1-292A-43F5-B983-4F6D64CD8A50}|GuntherRefuse.csproj|solutionrelative:views\\homeview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{B30E05F1-292A-43F5-B983-4F6D64CD8A50}|GuntherRefuse.csproj|c:\\users\\micha\\onedrive\\documents\\guntherrefuse\\views\\dispatchtrucksview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{B30E05F1-292A-43F5-B983-4F6D64CD8A50}|GuntherRefuse.csproj|solutionrelative:views\\dispatchtrucksview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B30E05F1-292A-43F5-B983-4F6D64CD8A50}|GuntherRefuse.csproj|c:\\users\\micha\\onedrive\\documents\\guntherrefuse\\viewmodels\\homeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B30E05F1-292A-43F5-B983-4F6D64CD8A50}|GuntherRefuse.csproj|solutionrelative:viewmodels\\homeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B30E05F1-292A-43F5-B983-4F6D64CD8A50}|GuntherRefuse.csproj|c:\\users\\micha\\onedrive\\documents\\guntherrefuse\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B30E05F1-292A-43F5-B983-4F6D64CD8A50}|GuntherRefuse.csproj|solutionrelative:mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B30E05F1-292A-43F5-B983-4F6D64CD8A50}|GuntherRefuse.csproj|c:\\users\\micha\\onedrive\\documents\\guntherrefuse\\views\\dispatchtrucksview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B30E05F1-292A-43F5-B983-4F6D64CD8A50}|GuntherRefuse.csproj|solutionrelative:views\\dispatchtrucksview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B30E05F1-292A-43F5-B983-4F6D64CD8A50}|GuntherRefuse.csproj|c:\\users\\micha\\onedrive\\documents\\guntherrefuse\\platforms\\ios\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B30E05F1-292A-43F5-B983-4F6D64CD8A50}|GuntherRefuse.csproj|solutionrelative:platforms\\ios\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,32 +26,58 @@
       "DocumentGroups": [
         {
           "DockedHeight": 740,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "HomeViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\micha\\OneDrive\\Documents\\GuntherRefuse\\ViewModels\\HomeViewModel.cs",
-              "RelativeDocumentMoniker": "ViewModels\\HomeViewModel.cs",
-              "ToolTip": "C:\\Users\\micha\\OneDrive\\Documents\\GuntherRefuse\\ViewModels\\HomeViewModel.cs",
-              "RelativeToolTip": "ViewModels\\HomeViewModel.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAAAAD4AAAALAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\micha\\OneDrive\\Documents\\GuntherRefuse\\Platforms\\iOS\\Program.cs",
+              "RelativeDocumentMoniker": "Platforms\\iOS\\Program.cs",
+              "ToolTip": "C:\\Users\\micha\\OneDrive\\Documents\\GuntherRefuse\\Platforms\\iOS\\Program.cs",
+              "RelativeToolTip": "Platforms\\iOS\\Program.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAUwCIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-28T03:32:09.883Z",
+              "WhenOpened": "2024-08-28T14:20:10.811Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MauiProgram.cs",
+              "DocumentMoniker": "C:\\Users\\micha\\OneDrive\\Documents\\GuntherRefuse\\MauiProgram.cs",
+              "RelativeDocumentMoniker": "MauiProgram.cs",
+              "ToolTip": "C:\\Users\\micha\\OneDrive\\Documents\\GuntherRefuse\\MauiProgram.cs",
+              "RelativeToolTip": "MauiProgram.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-28T14:18:49.177Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "HomeView.xaml",
-              "DocumentMoniker": "C:\\Users\\micha\\OneDrive\\Documents\\GuntherRefuse\\Views\\HomeView.xaml",
-              "RelativeDocumentMoniker": "Views\\HomeView.xaml",
-              "ToolTip": "C:\\Users\\micha\\OneDrive\\Documents\\GuntherRefuse\\Views\\HomeView.xaml",
-              "RelativeToolTip": "Views\\HomeView.xaml",
-              "ViewState": "AgIAAHgAAAAAAAAAAAAAAHoAAABZAAAAAAAAAA==",
+              "Title": "DispatchTrucksView.xaml",
+              "DocumentMoniker": "C:\\Users\\micha\\OneDrive\\Documents\\GuntherRefuse\\Views\\DispatchTrucksView.xaml",
+              "RelativeDocumentMoniker": "Views\\DispatchTrucksView.xaml",
+              "ToolTip": "C:\\Users\\micha\\OneDrive\\Documents\\GuntherRefuse\\Views\\DispatchTrucksView.xaml",
+              "RelativeToolTip": "Views\\DispatchTrucksView.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-08-28T05:10:41.096Z",
+              "WhenOpened": "2024-08-28T14:16:46.257Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DispatchTrucksView.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\micha\\OneDrive\\Documents\\GuntherRefuse\\Views\\DispatchTrucksView.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\DispatchTrucksView.xaml.cs",
+              "ToolTip": "C:\\Users\\micha\\OneDrive\\Documents\\GuntherRefuse\\Views\\DispatchTrucksView.xaml.cs",
+              "RelativeToolTip": "Views\\DispatchTrucksView.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-28T14:06:28.916Z",
               "EditorCaption": ""
             }
           ]

@@ -1,65 +1,67 @@
-﻿namespace GuntherRefuse.ViewModels;
-
-public partial class HomeViewModel : BaseViewModel
+﻿namespace GuntherRefuse.ViewModels
 {
-    GetNumberOfDispatchedTrucks getTruckService;
-    List<Dispatch> records;
-    DateTime currTime = DateTime.Now;
-    string properGreetingOftheDay;
-    string name = "Mike";
 
-    public ObservableCollection<Dispatch> DispatchRecords { get; } = new();
-
-    public HomeViewModel(GetNumberOfDispatchedTrucks getTruckService)
+    public partial class HomeViewModel : BaseViewModel
     {
-        switch (currTime.Hour)
+        GetNumberOfDispatchedTrucks getTruckService;
+        List<Dispatch> records;
+        DateTime currTime = DateTime.Now;
+        string properGreetingOftheDay;
+        string name = "Mike";
+
+        public ObservableCollection<Dispatch> DispatchRecords { get; } = new();
+
+        public HomeViewModel(GetNumberOfDispatchedTrucks getTruckService)
         {
-            case int i when i >= 0 && i <= 11:
-                properGreetingOftheDay = "Good Morning,";
-                break;
-            case int i when i >= 12 && i <= 16:
-                properGreetingOftheDay = "Good Afternoon,";
-                break;
-            default:
-                properGreetingOftheDay = "Good Evening,";
-                break;
-
-        }
-
-        Title = $"{properGreetingOftheDay} {name}";
-        this.getTruckService = getTruckService;
-        this.GetNumberOfTrucks();
-    }
-
-    [RelayCommand]
-    public async Task GetNumberOfTrucks()
-    {
-        if (IsBusy)
-            return;
-
-        try
-        {
-            IsBusy = true;
-
-            records = await getTruckService.GetNumberOfRecords();
-
-            foreach (Dispatch record in records)
+            switch (currTime.Hour)
             {
-                DispatchRecords.Add(record);
+                case int i when i >= 0 && i <= 11:
+                    properGreetingOftheDay = "Good Morning,";
+                    break;
+                case int i when i >= 12 && i <= 16:
+                    properGreetingOftheDay = "Good Afternoon,";
+                    break;
+                default:
+                    properGreetingOftheDay = "Good Evening,";
+                    break;
+
             }
 
+            Title = $"{properGreetingOftheDay} {name}";
+            this.getTruckService = getTruckService;
+            this.GetNumberOfTrucks();
         }
-        catch
-        {
-            await Shell.Current.DisplayAlert("Error!", "Database connection error.", "OK");
-        }
-        finally
-        {
-            IsBusy = false;
-        }
-    }
 
-    [RelayCommand]
-    public Task NavigateToDispatchTrucks() => Shell.Current.GoToAsync(nameof(DispatchTrucksView));
+        [RelayCommand]
+        public async Task GetNumberOfTrucks()
+        {
+            if (IsBusy)
+                return;
+
+            try
+            {
+                IsBusy = true;
+
+                records = await getTruckService.GetNumberOfRecords();
+
+                foreach (Dispatch record in records)
+                {
+                    DispatchRecords.Add(record);
+                }
+
+            }
+            catch
+            {
+                await Shell.Current.DisplayAlert("Error!", "Database connection error.", "OK");
+            }
+            finally
+            {
+                IsBusy = false;
+            }
+        }
+
+        [RelayCommand]
+        public Task NavigateToDispatchTrucks() => Shell.Current.GoToAsync(nameof(DispatchTrucksView));
+    }
 }
 

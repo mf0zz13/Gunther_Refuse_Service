@@ -1,13 +1,15 @@
-namespace GuntherRefuse.ViewModels;
-
-public partial class BaseViewModel : ObservableObject
+namespace GuntherRefuse.ViewModels
 {
-	[ObservableProperty]
-	[NotifyPropertyChangedFor(nameof(IsNotBusy))]
-	private bool isBusy;
 
-	public bool IsNotBusy => !IsBusy;
+	public partial class BaseViewModel : ObservableObject
+	{
+		[ObservableProperty]
+		[NotifyPropertyChangedFor(nameof(IsNotBusy))]
+		private bool isBusy;
 
-	[ObservableProperty]
-	string title;
+		public bool IsNotBusy => !IsBusy;
+
+		[ObservableProperty]
+		string title;
+	}
 }

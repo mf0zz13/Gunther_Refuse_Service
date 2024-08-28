@@ -1,4 +1,6 @@
-﻿using ObjCRuntime;
+﻿using Microsoft.Maui.Controls.Handlers.Compatibility;
+using Microsoft.Maui.Controls.Platform.Compatibility;
+using ObjCRuntime;
 using UIKit;
 
 namespace GuntherRefuse
@@ -11,6 +13,31 @@ namespace GuntherRefuse
             // if you want to use a different Application Delegate class from "AppDelegate"
             // you can specify it here.
             UIApplication.Main(args, null, typeof(AppDelegate));
+        }
+    }
+
+    public class CustomShellRenderer : ShellRenderer
+    {
+        public CustomShellRenderer()
+        {
+
+        }
+        protected override IShellSectionRenderer CreateShellSectionRenderer(ShellSection shellSection)
+        {
+            return new CustomSectionRenderer(this);
+        }
+    }
+
+    public class CustomSectionRenderer : ShellSectionRenderer
+    {
+        public CustomSectionRenderer(IShellContext context) : base(context)
+        {
+
+        }
+        public override void ViewDidLoad()
+        {
+            base.ViewDidLoad();
+            InteractivePopGestureRecognizer.Enabled = false;
         }
     }
 }

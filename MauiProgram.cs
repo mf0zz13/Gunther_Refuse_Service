@@ -14,10 +14,15 @@ namespace GuntherRefuse
                 {
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
+                })
+                .ConfigureMauiHandlers((handlers) => {
+#if IOS
+                handlers.AddHandler(typeof(Shell), typeof(CustomShellRenderer));  
+#endif
                 });
 
 #if DEBUG
-    		builder.Logging.AddDebug();
+            builder.Logging.AddDebug();
 #endif
             builder.Services.AddSingleton<GetNumberOfDispatchedTrucks>();
             builder.Services.AddSingleton<HomeViewModel>();
