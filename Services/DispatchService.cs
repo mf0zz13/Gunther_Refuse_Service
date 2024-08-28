@@ -1,10 +1,10 @@
 ﻿namespace GuntherRefuse.Services;
 
-public class GetNumberOfDispatchedTrucks
+public class DispatchService
 {
     List<Dispatch> dispatchedTrucks = new();
 
-    public async Task<List<Dispatch>> GetNumberOfRecords()
+    public async Task<List<Dispatch>> GetTodaysRecords()
     {
         DateTime today = DateTime.Today;
 

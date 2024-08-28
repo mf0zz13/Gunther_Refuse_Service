@@ -3,7 +3,7 @@
 
     public partial class HomeViewModel : BaseViewModel
     {
-        GetNumberOfDispatchedTrucks getTruckService;
+        DispatchService getTruckService;
         List<Dispatch> records;
         DateTime currTime = DateTime.Now;
         string properGreetingOftheDay;
@@ -11,7 +11,7 @@
 
         public ObservableCollection<Dispatch> DispatchRecords { get; } = new();
 
-        public HomeViewModel(GetNumberOfDispatchedTrucks getTruckService)
+        public HomeViewModel(DispatchService getTruckService)
         {
             switch (currTime.Hour)
             {
@@ -42,7 +42,7 @@
             {
                 IsBusy = true;
 
-                records = await getTruckService.GetNumberOfRecords();
+                records = await getTruckService.GetTodaysRecords();
 
                 foreach (Dispatch record in records)
                 {
@@ -61,7 +61,10 @@
         }
 
         [RelayCommand]
-        public Task NavigateToDispatchTrucks() => Shell.Current.GoToAsync(nameof(DispatchTrucksView));
+        public Task NavigateToDispatchTrucks() => Shell.Current.GoToAsync(nameof(DispatchTrucksView),false);
+
+        [RelayCommand]
+        public Task NavigateToManageEmployees() => Shell.Current.GoToAsync(nameof(ManageEmployeesView), false);
     }
 }
 

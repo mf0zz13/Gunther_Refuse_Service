@@ -8,7 +8,8 @@
     Title="Gunther Refuse">
 
     <ShellContent
+        Title="Back"
         ContentTemplate="{DataTemplate views:HomeView}"
-        Route="MainPage" />
-
+        Route="MainPage"/>
+    
 </Shell>

@@ -24,12 +24,18 @@ namespace GuntherRefuse
 #if DEBUG
             builder.Logging.AddDebug();
 #endif
-            builder.Services.AddSingleton<GetNumberOfDispatchedTrucks>();
+            builder.Services.AddSingleton<DispatchService>();
             builder.Services.AddSingleton<HomeViewModel>();
             builder.Services.AddSingleton<HomeView>();
 
+            builder.Services.AddSingleton<TrucksService>();
             builder.Services.AddSingleton<DispatchTrucksViewModel>();
             builder.Services.AddSingleton<DispatchTrucksView>();
+
+            builder.Services.AddTransient<DispatchViewModel>();
+            builder.Services.AddTransient<DispatchView>();
+
+            builder.Services.AddSingleton<ManageEmployeesView>();
 
             return builder.Build();
         }
