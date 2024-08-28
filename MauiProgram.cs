@@ -9,7 +9,7 @@ namespace GuntherRefuse
             var builder = MauiApp.CreateBuilder();
             builder
                 .UseMauiApp<App>()
-                .ConfigureSyncfusionCore()
+                .UseMauiCommunityToolkit()
                 .ConfigureFonts(fonts =>
                 {
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
@@ -20,20 +20,6 @@ namespace GuntherRefuse
     		builder.Logging.AddDebug();
 #endif
 
-            builder.Services.AddTransient<DispatchRecordsService>();
-            builder.Services.AddTransient<DispatchViewModel>();
-            builder.Services.AddTransient<DispatchView>();
-
-            builder.Services.AddSingleton<TrucksService>();
-            builder.Services.AddSingleton<DispatchTrucksViewModel>();
-            builder.Services.AddSingleton<DispatchTrucksView>();
-
-            builder.Services.AddSingleton<EmployeeService>();
-            builder.Services.AddSingleton<EmployeeViewModel>();
-            builder.Services.AddSingleton<EmployeeView>();
-
-            builder.Services.AddSingleton<DispatchStatusService>();
-            builder.Services.AddSingleton<HomeViewModel>();
             builder.Services.AddSingleton<HomeView>();
 
             return builder.Build();

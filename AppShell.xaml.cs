@@ -5,9 +5,6 @@
         public AppShell()
         {
             InitializeComponent();
-
-
-            Routing.RegisterRoute(nameof(DispatchView), typeof(DispatchView));
         }
     }
 }
