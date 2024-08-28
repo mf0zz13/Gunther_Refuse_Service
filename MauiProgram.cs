@@ -19,7 +19,8 @@ namespace GuntherRefuse
 #if DEBUG
     		builder.Logging.AddDebug();
 #endif
-
+            builder.Services.AddSingleton<GetNumberOfDispatchedTrucks>();
+            builder.Services.AddSingleton<HomeViewModel>();
             builder.Services.AddSingleton<HomeView>();
 
             return builder.Build();

@@ -2,9 +2,10 @@
 
 public partial class HomeView : ContentPage
 {
-    public HomeView()
+    public HomeView(HomeViewModel viewModel)
     {
         InitializeComponent();
+        BindingContext = viewModel;
     }
 }
 

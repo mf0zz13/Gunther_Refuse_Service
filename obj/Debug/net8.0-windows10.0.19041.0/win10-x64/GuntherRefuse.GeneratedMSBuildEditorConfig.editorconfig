@@ -8,35 +8,35 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = GuntherRefuse
-build_property.ProjectDir = C:\Users\micha\OneDrive\Documents\C#_code\Gunther Refuse\
+build_property.ProjectDir = C:\Users\micha\OneDrive\Documents\C#_code\GuntherRefuse\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 
-[C:/Users/micha/OneDrive/Documents/C\#_code/Gunther Refuse/App.xaml]
+[C:/Users/micha/OneDrive/Documents/C\#_code/GuntherRefuse/App.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = GuntherRefuse.App.xaml
 build_metadata.AdditionalFiles.TargetPath = App.xaml
 build_metadata.AdditionalFiles.RelativePath = App.xaml
 
-[C:/Users/micha/OneDrive/Documents/C\#_code/Gunther Refuse/AppShell.xaml]
+[C:/Users/micha/OneDrive/Documents/C\#_code/GuntherRefuse/AppShell.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = GuntherRefuse.AppShell.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
-[C:/Users/micha/OneDrive/Documents/C\#_code/Gunther Refuse/Resources/Styles/Colors.xaml]
+[C:/Users/micha/OneDrive/Documents/C\#_code/GuntherRefuse/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = GuntherRefuse.Resources.Styles.Colors.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
 
-[C:/Users/micha/OneDrive/Documents/C\#_code/Gunther Refuse/Resources/Styles/Styles.xaml]
+[C:/Users/micha/OneDrive/Documents/C\#_code/GuntherRefuse/Resources/Styles/Styles.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = GuntherRefuse.Resources.Styles.Styles.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
 
-[C:/Users/micha/OneDrive/Documents/C\#_code/Gunther Refuse/Views/HomeView.xaml]
+[C:/Users/micha/OneDrive/Documents/C\#_code/GuntherRefuse/Views/HomeView.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = GuntherRefuse.Views.HomeView.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\HomeView.xaml
