@@ -119,7 +119,8 @@
                                         FontSize="20"
                                         Background="#56706f"
                                         TextColor="White"
-                                        Text="Dispatch Trucks"/>
+                                        Text="Dispatch Trucks"
+                                        Command="{Binding NavigateToDispatchTrucksCommand}"/>
                         
                                 <Button Grid.Row="1"
                                         HorizontalOptions="CenterAndExpand"

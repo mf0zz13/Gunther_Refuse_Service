@@ -57,7 +57,9 @@ public partial class HomeViewModel : BaseViewModel
         {
             IsBusy = false;
         }
-
     }
+
+    [RelayCommand]
+    public Task NavigateToDispatchTrucks() => Shell.Current.GoToAsync(nameof(DispatchTrucksView));
 }
 
