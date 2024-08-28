@@ -92,4 +92,13 @@
 	  </MauiXaml>
 	</ItemGroup>
 
+	<ItemGroup>
+	  <None Update="Views\DispatchTrucksView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </None>
+	  <None Update="Views\DispatchView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </None>
+	</ItemGroup>
+
 </Project>

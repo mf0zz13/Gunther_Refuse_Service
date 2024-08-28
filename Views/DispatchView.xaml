@@ -1,20 +1,24 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="GuntherRefuse.Views.DispatchView">
+             xmlns:viewmodel="clr-namespace:GuntherRefuse.ViewModels"
+             x:DataType="viewmodel:DispatchViewModel"
+             x:Class="GuntherRefuse.Views.DispatchView"
+             Shell.BackgroundColor="#56706f">
 
     <Shell.BackButtonBehavior>
         <BackButtonBehavior TextOverride="Back"/>
     </Shell.BackButtonBehavior>
 
     <Shell.TitleView>
-        <Label BackgroundColor="Transparent"
-            HorizontalOptions="Center"
-            VerticalOptions="CenterAndExpand"
-            FontSize="36"
-            FontAttributes="Bold"
-            TextColor="White"
-            Text="{Binding Title}"/>
+        <Label Padding="10"
+               BackgroundColor="Transparent"
+               HorizontalOptions="StartAndExpand"
+               VerticalOptions="CenterAndExpand"
+               FontSize="36"
+               FontAttributes="Bold"
+               TextColor="White"
+               Text="{Binding Truck.DispatchFormatted}"/>
     </Shell.TitleView>
 
     <VerticalStackLayout>

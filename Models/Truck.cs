@@ -4,6 +4,7 @@
     {
         int _truckNumber;
         string _truckNumberFormatted;
+        string _dispatchFormatted;
 
         // Properties that are stored in database
         public int TruckNumber 
@@ -12,13 +13,15 @@
             set
             {
                 _truckNumberFormatted = $"Truck Number: {value}";
+                _dispatchFormatted = $"Dispatch Truck {value}";
                 _truckNumber = value;
             }
         }
         public int Available { get; set; }
 
         // Properties that are minipulated in for user display
-        public string TruckNumberFormatted { get => _truckNumberFormatted; set => _truckNumberFormatted = value; }
+        public string TruckNumberFormatted { get => _truckNumberFormatted; }
+        public string DispatchFormatted { get => _dispatchFormatted; }
     }
 }
     

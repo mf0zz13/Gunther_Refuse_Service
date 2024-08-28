@@ -5,7 +5,6 @@
              xmlns:model="clr-namespace:GuntherRefuse.Models"
              x:Class="GuntherRefuse.Views.DispatchTrucksView"
              x:DataType="viewmodel:DispatchTrucksViewModel"
-             Shell.NavBarIsVisible="True"
              Shell.BackgroundColor="#56706f">
 
     <Shell.BackButtonBehavior>
@@ -13,8 +12,9 @@
     </Shell.BackButtonBehavior>
 
     <Shell.TitleView>
-        <Label BackgroundColor="Transparent"
-               HorizontalOptions="Center"
+        <Label Padding="20"
+               BackgroundColor="Transparent"
+               HorizontalOptions="StartAndExpand"
                VerticalOptions="CenterAndExpand"
                FontSize="36"
                FontAttributes="Bold"
