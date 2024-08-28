@@ -23,6 +23,9 @@ namespace GuntherRefuse
             builder.Services.AddSingleton<HomeViewModel>();
             builder.Services.AddSingleton<HomeView>();
 
+            builder.Services.AddSingleton<DispatchTrucksViewModel>();
+            builder.Services.AddSingleton<DispatchTrucksView>();
+
             return builder.Build();
         }
     }

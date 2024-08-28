@@ -77,7 +77,7 @@
 
             <Border BackgroundColor="White"
                     Stroke="#56706f"
-                    HeightRequest="275"
+                    HeightRequest="325"
                     StrokeThickness="5">
 
                 <Border.StrokeShape>
@@ -106,7 +106,7 @@
                     <VerticalStackLayout Grid.Row="1"
                                          Spacing="10">
 
-                        <Grid RowDefinitions="*,*,*"
+                        <Grid RowDefinitions="*,*,*,*"
                               RowSpacing="10"
                               Padding="10,10,10,10">
 
@@ -131,6 +131,15 @@
                                         Text="Manage Employees"/>
 
                                 <Button Grid.Row="2"
+                                        HorizontalOptions="CenterAndExpand"
+                                        WidthRequest="215"
+                                        FontAttributes="Bold"
+                                        FontSize="20"
+                                        Background="#56706f"
+                                        TextColor="White"
+                                        Text="Truck Status"/>
+                            
+                                <Button Grid.Row="3"
                                         HorizontalOptions="CenterAndExpand"
                                         WidthRequest="215"
                                         FontAttributes="Bold"

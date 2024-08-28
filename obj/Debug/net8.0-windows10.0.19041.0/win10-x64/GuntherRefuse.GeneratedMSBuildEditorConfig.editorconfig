@@ -36,6 +36,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = GuntherRefuse.Resources.St
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
 
+[C:/Users/micha/OneDrive/Documents/GuntherRefuse/Views/DispatchTrucksView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = GuntherRefuse.Views.DispatchTrucksView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\DispatchTrucksView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\DispatchTrucksView.xaml
+
 [C:/Users/micha/OneDrive/Documents/GuntherRefuse/Views/HomeView.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = GuntherRefuse.Views.HomeView.xaml
