@@ -11,20 +11,5 @@ namespace GuntherRefuse.ViewModels
 
 		[ObservableProperty]
 		string title;
-
-		[ObservableProperty]
-		bool refreshing;
-
-		[RelayCommand]
-		public void Refreshed()
-		{
-			Refreshing = false;
-		}
-
-		[RelayCommand]
-		public void RefreshView()
-		{
-			Refreshing = true;
-		}
 	}
 }

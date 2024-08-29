@@ -7,6 +7,11 @@ public partial class HomeView : ContentPage
         InitializeComponent();
         BindingContext = viewModel;
     }
+    
+    public async void Initalize(HomeViewModel viewModel)
+    {
+        await viewModel.GetNumberOfTrucks();
+    }
 }
 
 

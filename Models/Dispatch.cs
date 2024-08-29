@@ -32,7 +32,6 @@
         public int Driver { get; set; }
         public int HelperOne { get; set; }
         public int HelperTwo { get; set; }
-        public int HelperThree { get; set; }
         public int TrashOrRecyclingOrYard
         {
             get => _collectionType;

@@ -3,7 +3,7 @@
 
     public partial class HomeViewModel : BaseViewModel
     {
-        DispatchService getTruckService;
+        DispatchService getTruckService = new();
         List<Dispatch> records;
         DateTime currTime = DateTime.Now;
         string properGreetingOftheDay;
@@ -11,7 +11,7 @@
 
         public ObservableCollection<Dispatch> DispatchRecords { get; } = new();
 
-        public HomeViewModel(DispatchService getTruckService)
+        public HomeViewModel()
         {
             switch (currTime.Hour)
             {

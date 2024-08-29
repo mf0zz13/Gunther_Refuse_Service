@@ -11,9 +11,7 @@
         <BackButtonBehavior TextOverride="Back"/>
     </Shell.BackButtonBehavior>
 
-    <RefreshView IsRefreshing="{Binding Refreshing}"
-             Command="{Binding RefreshedCommand}">
-        <Shell.TitleView>
+    <Shell.TitleView>
             <Label Padding="20"
                    BackgroundColor="Transparent"
                    HorizontalOptions="StartAndExpand"
@@ -71,7 +69,6 @@
             </CollectionView.ItemTemplate>
 
         </CollectionView>
-    </RefreshView>
 
 
 </ContentPage>

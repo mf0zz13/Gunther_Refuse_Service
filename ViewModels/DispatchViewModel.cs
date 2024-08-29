@@ -5,6 +5,7 @@ namespace GuntherRefuse.ViewModels
     [QueryProperty(nameof(Truck), nameof(Truck))]
     public partial class DispatchViewModel : BaseViewModel
     {
+        HomeViewModel hVM;
         DispatchService dispatchService = new();
         EmployeeService employeeService = new();
         List<Dispatch> dispatchedList;
@@ -13,7 +14,6 @@ namespace GuntherRefuse.ViewModels
         public ObservableCollection<Employee> filteredEmployeeList { get; } = new();
         public ObservableCollection<Employee> filteredEmployeeList1 { get; } = new();
         public ObservableCollection<Employee> filteredEmployeeList2 { get; } = new();
-        public ObservableCollection<Employee> filteredEmployeeList3 { get; } = new();
 
         [ObservableProperty]
         Truck truck;
@@ -38,9 +38,6 @@ namespace GuntherRefuse.ViewModels
 
         [ObservableProperty]
         Employee helperTwo;
-
-        [ObservableProperty]
-        Employee helperThree;
 
         [ObservableProperty]
         int wasteCollectionType;
@@ -206,35 +203,6 @@ namespace GuntherRefuse.ViewModels
         }
 
         [RelayCommand]
-        public void SearchHelperThreeCommand(string text)
-        {
-            if (filteredEmployeeList != null)
-                filteredEmployeeList.Clear();
-
-            if (dispatchedList.Count > 0)
-            {
-                var query = from employee in helperList
-                            join record in dispatchedList on employee.EmployeeID equals record.HelperThree into groupJoin
-                            from subgroup in groupJoin.DefaultIfEmpty()
-                            select new { employee };
-
-                foreach (var v in query)
-                {
-                    if (v.employee.FullName.ToUpper().Contains(text.ToUpper()))
-                        filteredEmployeeList3.Add(v.employee);
-                }
-            }
-            else
-            {
-                foreach (Employee employee in helperList)
-                {
-                    if (employee.FullName.ToUpper().Contains(text.ToUpper()))
-                        filteredEmployeeList3.Add(employee);
-                }
-            }
-        }
-
-        [RelayCommand]
         public void SetDriver(Employee employee) { this.dispatchDriver = employee; }
 
         [RelayCommand]
@@ -244,13 +212,10 @@ namespace GuntherRefuse.ViewModels
         public void SetHelperTwo(Employee employee) { this.helperTwo = employee; }
 
         [RelayCommand]
-        public void SetHelperThree(Employee employee) { this.helperThree = employee; }
-
-        [RelayCommand]
-        public void Dispatch()
+        public async void Dispatch()
         {
-            dispatchService.DispatchTruck($"INSERT INTO DispatchLogs (Date, ServiceArea, TruckNumber, Driver, HelperOne, HelperTwo, HelperThree, TrashOrRecyclingOrYard) VALUES ('{Date.ToShortDateString()}','{ServiceArea}','{Truck.TruckNumber}','{DispatchDriver.EmployeeID}','{HelperOne.EmployeeID}','{HelperTwo.EmployeeID}','{HelperThree.EmployeeID}','{WasteCollectionType}');");
-            Shell.Current.GoToAsync("..");
-}
+            await dispatchService.DispatchTruck($"INSERT INTO DispatchLogs (Date, ServiceArea, TruckNumber, Driver, HelperOne, HelperTwo, TrashOrRecyclingOrYard) VALUES ('{Date.ToShortDateString()}','{ServiceArea}','{Truck.TruckNumber}','{DispatchDriver.EmployeeID}','{HelperOne.EmployeeID}','{HelperTwo.EmployeeID}','{WasteCollectionType}');");
+            await Shell.Current.GoToAsync("../..");
+        }
     }
 }

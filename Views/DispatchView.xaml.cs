@@ -12,17 +12,8 @@ namespace GuntherRefuse.Views
             dv = this;
         }
 
-        private void CheckBox_CheckedChanged(object sender, CheckedChangedEventArgs e)
-        {
-            if (e.Value)
-                dvm.IsChecked = true;
-            else
-                dvm.IsChecked = false;
-        }
-
         private void TapGestureRecognizer_Tapped(object sender, TappedEventArgs e)
         {
-            dv.driverSearchBar.HideKeyboardAsync(CancellationToken.None);
             dv.driverSearchBar.Text = "";
             dv.driverNameLabel.Text = dvm.DispatchDriver.FullName;
             dvm.filteredEmployeeList.Clear();
@@ -30,7 +21,6 @@ namespace GuntherRefuse.Views
 
         private void TapGestureRecognizer_Tapped_1(object sender, TappedEventArgs e)
         {
-            dv.helperOneSearchBar.HideKeyboardAsync(CancellationToken.None);
             dv.helperOneSearchBar.Text = "";
             dv.HelperOneNameLabel.Text = dvm.HelperOne.FullName;
             dvm.filteredEmployeeList1.Clear();
@@ -38,18 +28,24 @@ namespace GuntherRefuse.Views
 
         private void TapGestureRecognizer_Tapped_2(object sender, TappedEventArgs e)
         {
-            dv.helperTwoSearchBar.HideKeyboardAsync(CancellationToken.None);
             dv.helperTwoSearchBar.Text = "";
             dv.helperTwoNameLabel.Text = dvm.HelperTwo.FullName;
             dvm.filteredEmployeeList2.Clear();
         }
 
-        private void TapGestureRecognizer_Tapped_3(object sender, TappedEventArgs e)
+        private void helperTwoSearchBar_SearchButtonPressed(object sender, EventArgs e)
         {
-            dv.helperThreeSearchBar.HideKeyboardAsync(CancellationToken.None);
-            dv.helperThreeSearchBar.Text = "";
-            dv.helperThreeNameLabel.Text = dvm.HelperThree.FullName;
-            dvm.filteredEmployeeList3.Clear();
+            dv.helperTwoSearchBar.HideKeyboardAsync(CancellationToken.None);
+        }
+
+        private void helperOneSearchBar_SearchButtonPressed(object sender, EventArgs e)
+        {
+            dv.helperOneSearchBar.HideKeyboardAsync(CancellationToken.None);
+        }
+
+        private void driverSearchBar_SearchButtonPressed(object sender, EventArgs e)
+        {
+            dv.driverSearchBar.HideKeyboardAsync(CancellationToken.None);
         }
     }
 }
