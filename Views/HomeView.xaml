@@ -120,7 +120,7 @@
                                     Text="Dispatch Trucks"
                                     Command="{Binding NavigateToDispatchTrucksCommand}"/>
                         
-                            <Button Grid.Row="1"
+                            <!--<Button Grid.Row="1"
                                     HorizontalOptions="CenterAndExpand"
                                     WidthRequest="215"
                                     FontAttributes="Bold"
@@ -128,18 +128,18 @@
                                     Background="#56706f"
                                     TextColor="White"
                                     Text="Manage Employees"
-                                    Command="{Binding NavigateToManageEmployeesCommand}"/>
+                                    Command="{Binding NavigateToManageEmployeesCommand}"/>-->
 
-                            <Button Grid.Row="2"
+                            <!--<Button Grid.Row="2"
                                     HorizontalOptions="CenterAndExpand"
                                     WidthRequest="215"
                                     FontAttributes="Bold"
                                     FontSize="20"
                                     Background="#56706f"
                                     TextColor="White"
-                                    Text="Fleet Status"/>
+                                    Text="Fleet Status"/>-->
                             
-                            <Button Grid.Row="3"
+                            <Button Grid.Row="1"
                                     HorizontalOptions="CenterAndExpand"
                                     WidthRequest="215"
                                     FontAttributes="Bold"

@@ -8,6 +8,7 @@ global using CommunityToolkit.Mvvm.Input;
 global using Microsoft.Data.SqlClient;
 global using Dapper;
 global using System.Collections.ObjectModel;
+global using CommunityToolkit.Maui.Core.Platform;
 //global using System.ComponentModel;
 //global using System.Diagnostics;
 //global using System.Runtime.CompilerServices;

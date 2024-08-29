@@ -2,10 +2,10 @@
 {
     public partial class DispatchTrucksViewModel : BaseViewModel
     {
-        DispatchService dispatchedTrucks = new();
-        TrucksService trucks = new();
-        List<Truck> truckList = new();
-        List<Dispatch> dispatchedList = new();
+        DispatchService dispatchedTrucksService = new();
+        TrucksService trucksService = new();
+        List<Truck> truckList;
+        List<Dispatch> dispatchedList;
 
         public ObservableCollection<Truck> AvalibleTrucks { get; } = new();
 
@@ -25,8 +25,8 @@
             {
                 IsBusy = true;
 
-                truckList = await trucks.GetAvailableTrucks();
-                dispatchedList = await dispatchedTrucks.GetTodaysRecords();
+                truckList = await trucksService.GetAvailableTrucks();
+                dispatchedList = await dispatchedTrucksService.GetTodaysRecords();
 
                 foreach (Truck truck in truckList)
                 {

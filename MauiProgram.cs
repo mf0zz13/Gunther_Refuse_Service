@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.Logging;
+﻿using CommunityToolkit.Maui.Core;
+using Microsoft.Extensions.Logging;
 
 namespace GuntherRefuse
 {
@@ -10,6 +11,7 @@ namespace GuntherRefuse
             builder
                 .UseMauiApp<App>()
                 .UseMauiCommunityToolkit()
+                .UseMauiCommunityToolkitCore()
                 .ConfigureFonts(fonts =>
                 {
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
@@ -25,10 +27,12 @@ namespace GuntherRefuse
             builder.Logging.AddDebug();
 #endif
             builder.Services.AddSingleton<DispatchService>();
+            builder.Services.AddSingleton<TrucksService>();
+            builder.Services.AddSingleton<EmployeeService>();
+
             builder.Services.AddSingleton<HomeViewModel>();
             builder.Services.AddSingleton<HomeView>();
 
-            builder.Services.AddSingleton<TrucksService>();
             builder.Services.AddSingleton<DispatchTrucksViewModel>();
             builder.Services.AddSingleton<DispatchTrucksView>();
 

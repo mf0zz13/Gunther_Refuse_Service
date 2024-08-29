@@ -1,6 +1,6 @@
 ﻿namespace GuntherRefuse.Models
 {
-    public class Dispatch : ObservableObject
+    public class Dispatch
     {
         private string _formattedTruckName;
         private string _formattedRoute;

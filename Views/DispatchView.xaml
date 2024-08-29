@@ -2,6 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:viewmodel="clr-namespace:GuntherRefuse.ViewModels"
+             xmlns:model="clr-namespace:GuntherRefuse.Models"
              x:DataType="viewmodel:DispatchViewModel"
              x:Class="GuntherRefuse.Views.DispatchView"
              Shell.BackgroundColor="#56706f">
@@ -75,10 +76,15 @@
                            TextColor="White"
                            VerticalOptions="CenterAndExpand"
                            Text="Service Area:"/>
-                    <Picker Grid.Column="1"
-                            TextColor="Black"
+                    
+                    <Picker Title="Select Option"
+                            MinimumWidthRequest="200"
+                            WidthRequest="200"
+                            Grid.Column="1"
                             FontSize="26"
-                            HorizontalOptions="EndAndExpand"/>
+                            TextColor="Black"
+                            HorizontalOptions="StartAndExpand"
+                            ItemsSource="{Binding ServiceAreas}"/>
                 </Grid>
             </Border>
 
@@ -94,7 +100,8 @@
                             Offset="10,10"
                             Opacity=".5"/>
                 </Border.Shadow>
-                <Grid RowDefinitions="*,*">
+                <Grid RowDefinitions="*,*,Auto"
+                      ColumnDefinitions="*,*">
                     <Label Padding="6"
                            MinimumHeightRequest="56"
                            Grid.Row="0"
@@ -104,11 +111,55 @@
                            TextColor="White"
                            VerticalOptions="CenterAndExpand"
                            Text="Driver:"/>
-                    <SearchBar BackgroundColor="White"
+                    <Label Grid.Column="1"
+                           Padding="6"
+                           MinimumHeightRequest="56"
+                           Grid.Row="0"
+                           BackgroundColor="#56706f"
+                           FontAttributes="Bold"
+                           FontSize="26"
+                           TextColor="White"
+                           VerticalOptions="Start"
+                           Text="{Binding DispatchDriver.FullName}"/>
+                    
+                    
+                    <SearchBar x:Name="driverSearchBar"
+                               BackgroundColor="White"
                                Grid.Row="1"
+                               Grid.Column="0"
+                               Grid.ColumnSpan="2"
                                TextColor="Black"
                                FontSize="26"
-                               HorizontalOptions="EndAndExpand"/>
+                               HorizontalOptions="StartAndExpand"
+                               SearchButtonPressed="driverSearchBar_SearchButtonPressed"
+                               SearchCommand="{Binding SearchDriversCommand}"
+                               SearchCommandParameter="{Binding Text, Source={x:Reference driverSearchBar}}"/>
+                    
+                    <CollectionView Grid.Row="3"
+                                    Grid.ColumnSpan="2"
+                                    ItemsSource="{Binding filteredEmployeeList}"
+                                    BackgroundColor="White">
+
+                        <CollectionView.ItemTemplate>
+
+                            <DataTemplate x:DataType="model:Employee">
+                                <StackLayout Spacing="20"
+                                             Padding="10">
+                                    <Frame BackgroundColor="Transparent">
+                                        <Frame.GestureRecognizers>
+                                            <TapGestureRecognizer CommandParameter="{Binding .}"
+                                                                  Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:DispatchViewModel}}, Path=SetDriverCommand}"/>
+                                        </Frame.GestureRecognizers>
+                                        <Label TextColor="Black"
+                                               BackgroundColor="Transparent"
+                                               FontSize="24"
+                                               HorizontalOptions="CenterAndExpand"
+                                               Text="{Binding FullName}"/>
+                                    </Frame>
+                                </StackLayout>
+                            </DataTemplate>
+                        </CollectionView.ItemTemplate>
+                    </CollectionView>
                 </Grid>
             </Border>
 
@@ -233,7 +284,7 @@
                             Offset="10,10"
                             Opacity=".5"/>
                 </Border.Shadow>
-                <Grid RowDefinitions="*,*">
+                <Grid ColumnDefinitions="*,*">
                     <Label Padding="6"
                            Grid.Column="0"
                            BackgroundColor="#56706f"
@@ -242,11 +293,15 @@
                            TextColor="White"
                            VerticalOptions="CenterAndExpand"
                            Text="Collection Type:"/>
-                    <Picker Grid.Column="1"
-                            TextColor="Black"
+
+                    <Picker Title="Select Option"
+                            MinimumWidthRequest="200"
+                            WidthRequest="200"
+                            Grid.Column="1"
                             FontSize="26"
-                            HorizontalOptions="EndAndExpand"
-                            MinimumHeightRequest="80"/>
+                            TextColor="Black"
+                            HorizontalOptions="StartAndExpand"
+                            ItemsSource="{Binding TrashCollectionTypes}"/>
                 </Grid>
             </Border>
 

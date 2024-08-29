@@ -1,6 +1,6 @@
 ﻿namespace GuntherRefuse.Models
 {
-    public class Truck : ObservableObject
+    public class Truck
     {
         int _truckNumber;
         string _truckNumberFormatted;
