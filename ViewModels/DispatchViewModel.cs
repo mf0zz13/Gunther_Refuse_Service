@@ -8,8 +8,12 @@ namespace GuntherRefuse.ViewModels
         DispatchService dispatchService = new();
         EmployeeService employeeService = new();
         List<Dispatch> dispatchedList;
-        List<Employee> employeeList;
+        List<Employee> helperList;
+        List<Employee> driverList;
         public ObservableCollection<Employee> filteredEmployeeList { get; } = new();
+        public ObservableCollection<Employee> filteredEmployeeList1 { get; } = new();
+        public ObservableCollection<Employee> filteredEmployeeList2 { get; } = new();
+        public ObservableCollection<Employee> filteredEmployeeList3 { get; } = new();
 
         [ObservableProperty]
         Truck truck;
@@ -30,13 +34,13 @@ namespace GuntherRefuse.ViewModels
         Employee dispatchDriver;
 
         [ObservableProperty]
-        int helperOne;
+        Employee helperOne;
 
         [ObservableProperty]
-        int helperTwo;
+        Employee helperTwo;
 
         [ObservableProperty]
-        int helperThree;
+        Employee helperThree;
 
         [ObservableProperty]
         int wasteCollectionType;
@@ -53,6 +57,7 @@ namespace GuntherRefuse.ViewModels
         public DispatchViewModel()
         {
             this.GetAvailableDrivers();
+            Date = DateTime.Today;
         }
 
         public async Task GetAvailableDrivers()
@@ -64,14 +69,44 @@ namespace GuntherRefuse.ViewModels
             {
                 IsBusy = true;
 
-                if (employeeList != null)
-                    employeeList.Clear();
+                if (driverList != null)
+                    driverList.Clear();
 
                 if (dispatchedList != null)
                     dispatchedList.Clear();
 
                 dispatchedList = await dispatchService.GetTodaysRecords();
-                employeeList = await employeeService.GetDrivers();
+                driverList = await employeeService.GetDrivers();
+
+            }
+            catch
+            {
+                await Shell.Current.DisplayAlert("Error!", "Database connection error.", "OK");
+            }
+            finally
+            {
+                IsBusy = false;
+            }
+            GetAvailableHelpers();
+        }
+
+        public async Task GetAvailableHelpers()
+        {
+            if (IsBusy)
+                return;
+
+            try
+            {
+                IsBusy = true;
+
+                if (helperList != null)
+                    helperList.Clear();
+
+                if (dispatchedList != null)
+                    dispatchedList.Clear();
+
+                dispatchedList = await dispatchService.GetTodaysRecords();
+                helperList = await employeeService.GetHelpers();
 
             }
             catch
@@ -89,25 +124,133 @@ namespace GuntherRefuse.ViewModels
         {
             if (filteredEmployeeList != null)
                 filteredEmployeeList.Clear();
-
-            var query = from employee in employeeList
-                        join record in dispatchedList on employee.EmployeeID equals record.Driver into groupJoin
-                        from subgroup in groupJoin.DefaultIfEmpty()
-                        select new { employee}; 
-
-            foreach (var v in query)
+            if (dispatchedList.Count > 0)
             {
-                if (v.employee.FullName.ToUpper().Contains(text.ToUpper()))
-                    filteredEmployeeList.Add(v.employee);
-            }   
+                var query = from employee in driverList
+                            join record in dispatchedList on employee.EmployeeID equals record.Driver into groupJoin
+                            from subgroup in groupJoin.DefaultIfEmpty()
+                            select new { employee };
+
+                foreach (var v in query)
+                {
+                    if (v.employee.FullName.ToUpper().Contains(text.ToUpper()))
+                        filteredEmployeeList.Add(v.employee);
+                }
+            }
+            else
+            {
+                foreach (Employee employee in driverList)
+                {
+                    if (employee.FullName.ToUpper().Contains(text.ToUpper()))
+                        filteredEmployeeList.Add(employee);
+                }
+            }
         }
 
         [RelayCommand]
-        public void SetDriver(Employee employee)
+        public void SearchHelperOneCommand(string text)
         {
-            this.dispatchDriver = employee;
-            
+            if (filteredEmployeeList != null)
+                filteredEmployeeList.Clear();
+
+            if (dispatchedList.Count > 0)
+            {
+                var query = from employee in helperList
+                            join record in dispatchedList on employee.EmployeeID equals record.HelperOne into groupJoin
+                            from subgroup in groupJoin.DefaultIfEmpty()
+                            select new { employee };
+
+                foreach (var v in query)
+                {
+                    if (v.employee.FullName.ToUpper().Contains(text.ToUpper()))
+                        filteredEmployeeList1.Add(v.employee);
+                }
+            }
+            else
+            {
+                foreach (Employee employee in helperList)
+                {
+                    if (employee.FullName.ToUpper().Contains(text.ToUpper()))
+                        filteredEmployeeList1.Add(employee);
+                }
+            }
         }
 
+        [RelayCommand]
+        public void SearchHelperTwoCommand(string text)
+        {
+            if (filteredEmployeeList != null)
+                filteredEmployeeList.Clear();
+
+            if (dispatchedList.Count > 0)
+            {
+                var query = from employee in helperList
+                            join record in dispatchedList on employee.EmployeeID equals record.HelperTwo into groupJoin
+                            from subgroup in groupJoin.DefaultIfEmpty()
+                            select new { employee };
+
+                foreach (var v in query)
+                {
+                    if (v.employee.FullName.ToUpper().Contains(text.ToUpper()))
+                        filteredEmployeeList2.Add(v.employee);
+                }
+            }
+            else
+            {
+                foreach (Employee employee in helperList)
+                {
+                    if (employee.FullName.ToUpper().Contains(text.ToUpper()))
+                        filteredEmployeeList2.Add(employee);
+                }
+            }
+        }
+
+        [RelayCommand]
+        public void SearchHelperThreeCommand(string text)
+        {
+            if (filteredEmployeeList != null)
+                filteredEmployeeList.Clear();
+
+            if (dispatchedList.Count > 0)
+            {
+                var query = from employee in helperList
+                            join record in dispatchedList on employee.EmployeeID equals record.HelperThree into groupJoin
+                            from subgroup in groupJoin.DefaultIfEmpty()
+                            select new { employee };
+
+                foreach (var v in query)
+                {
+                    if (v.employee.FullName.ToUpper().Contains(text.ToUpper()))
+                        filteredEmployeeList3.Add(v.employee);
+                }
+            }
+            else
+            {
+                foreach (Employee employee in helperList)
+                {
+                    if (employee.FullName.ToUpper().Contains(text.ToUpper()))
+                        filteredEmployeeList3.Add(employee);
+                }
+            }
+        }
+
+        [RelayCommand]
+        public void SetDriver(Employee employee) { this.dispatchDriver = employee; }
+
+        [RelayCommand]
+        public void SetHelperOne(Employee employee) { this.helperOne = employee; }
+
+        [RelayCommand]
+        public void SetHelperTwo(Employee employee) { this.helperTwo = employee; }
+
+        [RelayCommand]
+        public void SetHelperThree(Employee employee) { this.helperThree = employee; }
+
+        [RelayCommand]
+        public void Dispatch()
+        {
+            dispatchService.DispatchTruck($"INSERT INTO DispatchLogs (Date, ServiceArea, TruckNumber, Driver, HelperOne, HelperTwo, HelperThree, TrashOrRecyclingOrYard) VALUES ('{Date.ToShortDateString()}','{ServiceArea}','{Truck.TruckNumber}','{DispatchDriver.EmployeeID}','{HelperOne.EmployeeID}','{HelperTwo.EmployeeID}','{HelperThree.EmployeeID}','{WasteCollectionType}');");
+            Shell.Current.GoToAsync("..");
+}
     }
 }

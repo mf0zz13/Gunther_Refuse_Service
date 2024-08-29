@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
              xmlns:viewmodel="clr-namespace:GuntherRefuse.ViewModels"
              xmlns:model="clr-namespace:GuntherRefuse.Models"
              x:DataType="viewmodel:DispatchViewModel"
@@ -51,7 +52,8 @@
                     <DatePicker Grid.Column="1"
                                 TextColor="Black"
                                 FontSize="26"
-                                HorizontalOptions="EndAndExpand"/>
+                                HorizontalOptions="EndAndExpand"
+                                Date="{Binding Date}"/>
                 </Grid>
             </Border>
 
@@ -84,7 +86,8 @@
                             FontSize="26"
                             TextColor="Black"
                             HorizontalOptions="StartAndExpand"
-                            ItemsSource="{Binding ServiceAreas}"/>
+                            ItemsSource="{Binding ServiceAreas}"
+                            SelectedItem="{Binding ServiceArea}"/>
                 </Grid>
             </Border>
 
@@ -101,7 +104,7 @@
                             Opacity=".5"/>
                 </Border.Shadow>
                 <Grid RowDefinitions="*,*,Auto"
-                      ColumnDefinitions="*,*">
+                      ColumnDefinitions="Auto,*">
                     <Label Padding="6"
                            MinimumHeightRequest="56"
                            Grid.Row="0"
@@ -111,7 +114,8 @@
                            TextColor="White"
                            VerticalOptions="CenterAndExpand"
                            Text="Driver:"/>
-                    <Label Grid.Column="1"
+                    <Label x:Name="driverNameLabel"
+                           Grid.Column="1"
                            Padding="6"
                            MinimumHeightRequest="56"
                            Grid.Row="0"
@@ -131,11 +135,11 @@
                                TextColor="Black"
                                FontSize="26"
                                HorizontalOptions="StartAndExpand"
-                               SearchButtonPressed="driverSearchBar_SearchButtonPressed"
                                SearchCommand="{Binding SearchDriversCommand}"
                                SearchCommandParameter="{Binding Text, Source={x:Reference driverSearchBar}}"/>
                     
-                    <CollectionView Grid.Row="3"
+                    <CollectionView x:Name="driverCollectionView"
+                                    Grid.Row="3"
                                     Grid.ColumnSpan="2"
                                     ItemsSource="{Binding filteredEmployeeList}"
                                     BackgroundColor="White">
@@ -148,7 +152,85 @@
                                     <Frame BackgroundColor="Transparent">
                                         <Frame.GestureRecognizers>
                                             <TapGestureRecognizer CommandParameter="{Binding .}"
-                                                                  Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:DispatchViewModel}}, Path=SetDriverCommand}"/>
+                                                                  Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:DispatchViewModel}}, Path=SetDriverCommand}"
+                                                                  Tapped="TapGestureRecognizer_Tapped"/>
+                                        </Frame.GestureRecognizers>
+                                        <Label TextColor="Black"
+                                               BackgroundColor="Transparent"
+                                               FontSize="24"
+                                               HorizontalOptions="CenterAndExpand"
+                                               Text="{Binding FullName}"/>
+                                    </Frame>
+                                </StackLayout>
+                            </DataTemplate>
+                        </CollectionView.ItemTemplate>
+                    </CollectionView>
+                </Grid>
+            </Border>
+
+            <Border Stroke="#56706f"
+                    StrokeThickness="5"
+                    BackgroundColor="White">    
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="10,10,10,10"/>
+                </Border.StrokeShape>
+                <Border.Shadow>
+                    <Shadow Brush="Black"
+                            Radius="10"
+                            Offset="10,10"
+                            Opacity=".5"/>
+                </Border.Shadow>
+                <Grid RowDefinitions="*,*,Auto"
+                      ColumnDefinitions="Auto,*">
+                    <Label Padding="6"
+                           MinimumHeightRequest="56"
+                           Grid.Row="0"
+                           BackgroundColor="#56706f"
+                           FontAttributes="Bold"
+                           FontSize="26"
+                           TextColor="White"
+                           VerticalOptions="CenterAndExpand"
+                           Text="Thrower One:"/>
+                    <Label x:Name="HelperOneNameLabel"
+                           Grid.Column="1"
+                           Padding="6"
+                           MinimumHeightRequest="56"
+                           Grid.Row="0"
+                           BackgroundColor="#56706f"
+                           FontAttributes="Bold"
+                           FontSize="26"
+                           TextColor="White"
+                           VerticalOptions="Start"
+                           Text="{Binding HelperOne.FullName}"/>
+
+
+                    <SearchBar x:Name="helperOneSearchBar"
+                               BackgroundColor="White"
+                               Grid.Row="1"
+                               Grid.Column="0"
+                               Grid.ColumnSpan="2"
+                               TextColor="Black"
+                               FontSize="26"
+                               HorizontalOptions="StartAndExpand"
+                               SearchCommand="{Binding SearchHelperOneCommandCommand}"
+                               SearchCommandParameter="{Binding Text, Source={x:Reference helperOneSearchBar}}"/>
+
+                    <CollectionView x:Name="helperOneCollectionView"
+                                    Grid.Row="3"
+                                    Grid.ColumnSpan="2"
+                                    ItemsSource="{Binding filteredEmployeeList1}"
+                                    BackgroundColor="White">
+
+                        <CollectionView.ItemTemplate>
+
+                            <DataTemplate x:DataType="model:Employee">
+                                <StackLayout Spacing="20"
+                                             Padding="10">
+                                    <Frame BackgroundColor="Transparent">
+                                        <Frame.GestureRecognizers>
+                                            <TapGestureRecognizer CommandParameter="{Binding .}"
+                                                                  Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:DispatchViewModel}}, Path=SetHelperOneCommand}"
+                                                                  Tapped="TapGestureRecognizer_Tapped_1"/>
                                         </Frame.GestureRecognizers>
                                         <Label TextColor="Black"
                                                BackgroundColor="Transparent"
@@ -175,37 +257,8 @@
                             Offset="10,10"
                             Opacity=".5"/>
                 </Border.Shadow>
-                <Grid RowDefinitions="*,*">
-                    <Label Grid.Row="0"
-                           Padding="6"
-                           MinimumHeightRequest="56"
-                           BackgroundColor="#56706f"
-                           FontAttributes="Bold"
-                           FontSize="26"
-                           TextColor="White"
-                           VerticalOptions="CenterAndExpand"
-                           Text="Thrower One:"/>
-                    <SearchBar Grid.Row="1"
-                               BackgroundColor="White"
-                               TextColor="Black"
-                               FontSize="26"
-                               HorizontalOptions="EndAndExpand"/>
-                </Grid>
-            </Border>
-
-            <Border Stroke="#56706f"
-                    StrokeThickness="5"
-                    BackgroundColor="White">
-                <Border.StrokeShape>
-                    <RoundRectangle CornerRadius="10,10,10,10"/>
-                </Border.StrokeShape>
-                <Border.Shadow>
-                    <Shadow Brush="Black"
-                            Radius="10"
-                            Offset="10,10"
-                            Opacity=".5"/>
-                </Border.Shadow>
-                <Grid RowDefinitions="*,*">
+                <Grid RowDefinitions="*,*,Auto"
+                      ColumnDefinitions="Auto,*">
                     <Label Padding="6"
                            MinimumHeightRequest="56"
                            Grid.Row="0"
@@ -215,19 +268,64 @@
                            TextColor="White"
                            VerticalOptions="CenterAndExpand"
                            Text="Thrower Two:"/>
-                    <SearchBar Grid.Row="1"
+                    <Label x:Name="helperTwoNameLabel"
+                           Grid.Column="1"
+                           Padding="6"
+                           MinimumHeightRequest="56"
+                           Grid.Row="0"
+                           BackgroundColor="#56706f"
+                           FontAttributes="Bold"
+                           FontSize="26"
+                           TextColor="White"
+                           VerticalOptions="Start"
+                           Text="{Binding HelperTwo.FullName}"/>
+
+
+                    <SearchBar x:Name="helperTwoSearchBar"
                                BackgroundColor="White"
+                               Grid.Row="1"
+                               Grid.Column="0"
+                               Grid.ColumnSpan="2"
                                TextColor="Black"
                                FontSize="26"
-                               HorizontalOptions="EndAndExpand"/>
+                               HorizontalOptions="StartAndExpand"
+                               SearchCommand="{Binding SearchHelperTwoCommandCommand}"
+                               SearchCommandParameter="{Binding Text, Source={x:Reference helperTwoSearchBar}}"/>
+
+                    <CollectionView x:Name="helperTwoCollectionView"
+                                    Grid.Row="3"
+                                    Grid.ColumnSpan="2"
+                                    ItemsSource="{Binding filteredEmployeeList2}"
+                                    BackgroundColor="White">
+
+                        <CollectionView.ItemTemplate>
+
+                            <DataTemplate x:DataType="model:Employee">
+                                <StackLayout Spacing="20"
+                                 Padding="10">
+                                    <Frame BackgroundColor="Transparent">
+                                        <Frame.GestureRecognizers>
+                                            <TapGestureRecognizer CommandParameter="{Binding .}"
+                                                      Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:DispatchViewModel}}, Path=SetHelperTwoCommand}"
+                                                      Tapped="TapGestureRecognizer_Tapped_2"/>
+                                        </Frame.GestureRecognizers>
+                                        <Label TextColor="Black"
+                                               BackgroundColor="Transparent"
+                                               FontSize="24"
+                                               HorizontalOptions="CenterAndExpand"
+                                               Text="{Binding FullName}"/>
+                                    </Frame>
+                                </StackLayout>
+                            </DataTemplate>
+                        </CollectionView.ItemTemplate>
+                    </CollectionView>
                 </Grid>
             </Border>
 
-            <Border x:Name="ThrowerThree"
-                    IsVisible="{Binding IsChecked}"
-                    Stroke="#56706f"
+            <Border Stroke="#56706f"
                     StrokeThickness="5"
-                    BackgroundColor="White">
+                    BackgroundColor="White"
+                    IsVisible="{Binding IsChecked}">
                 <Border.StrokeShape>
                     <RoundRectangle CornerRadius="10,10,10,10"/>
                 </Border.StrokeShape>
@@ -237,7 +335,8 @@
                             Offset="10,10"
                             Opacity=".5"/>
                 </Border.Shadow>
-                <Grid RowDefinitions="*,*">
+                <Grid RowDefinitions="*,*,Auto"
+                      ColumnDefinitions="Auto,*">
                     <Label Padding="6"
                            MinimumHeightRequest="56"
                            Grid.Row="0"
@@ -247,11 +346,57 @@
                            TextColor="White"
                            VerticalOptions="CenterAndExpand"
                            Text="Thrower Three:"/>
-                    <SearchBar Grid.Row="1"
+                    <Label x:Name="helperThreeNameLabel"
+                           Grid.Column="1"
+                           Padding="6"
+                           MinimumHeightRequest="56"
+                           Grid.Row="0"
+                           BackgroundColor="#56706f"
+                           FontAttributes="Bold"
+                           FontSize="26"
+                           TextColor="White"
+                           VerticalOptions="Start"
+                           Text="{Binding HelperThree.FullName}"/>
+
+
+                    <SearchBar x:Name="helperThreeSearchBar"
                                BackgroundColor="White"
+                               Grid.Row="1"
+                               Grid.Column="0"
+                               Grid.ColumnSpan="2"
                                TextColor="Black"
                                FontSize="26"
-                               HorizontalOptions="EndAndExpand"/>
+                               HorizontalOptions="StartAndExpand"
+                               SearchCommand="{Binding SearchHelperThreeCommandCommand}"
+                               SearchCommandParameter="{Binding Text, Source={x:Reference helperThreeSearchBar}}"/>
+
+                    <CollectionView x:Name="helperThreeCollectionView"
+                                    Grid.Row="3"
+                                    Grid.ColumnSpan="2"
+                                    ItemsSource="{Binding filteredEmployeeList3}"
+                                    BackgroundColor="White">
+
+                        <CollectionView.ItemTemplate>
+
+                            <DataTemplate x:DataType="model:Employee">
+                                <StackLayout Spacing="20"
+                                             Padding="10">
+                                    <Frame BackgroundColor="Transparent">
+                                        <Frame.GestureRecognizers>
+                                            <TapGestureRecognizer CommandParameter="{Binding .}"
+                                                                  Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:DispatchViewModel}}, Path=SetHelperThreeCommand}"
+                                                                  Tapped="TapGestureRecognizer_Tapped_3"/>
+                                        </Frame.GestureRecognizers>
+                                        <Label TextColor="Black"
+                                               BackgroundColor="Transparent"
+                                               FontSize="24"
+                                               HorizontalOptions="CenterAndExpand"
+                                               Text="{Binding FullName}"/>
+                                    </Frame>
+                                </StackLayout>
+                            </DataTemplate>
+                        </CollectionView.ItemTemplate>
+                    </CollectionView>
                 </Grid>
             </Border>
 
@@ -301,9 +446,18 @@
                             FontSize="26"
                             TextColor="Black"
                             HorizontalOptions="StartAndExpand"
-                            ItemsSource="{Binding TrashCollectionTypes}"/>
+                            ItemsSource="{Binding TrashCollectionTypes}"
+                            SelectedItem="{Binding WasteCollectionType}"/>
                 </Grid>
             </Border>
+
+            <Button x:Name="DispatchButton"
+                    TextColor="White"
+                    FontAttributes="Bold"
+                    FontSize="26"
+                    BackgroundColor="#56706f"
+                    Command="{Binding DispatchCommand}"
+                    Text="Dispatch"/>
 
 
         </VerticalStackLayout>

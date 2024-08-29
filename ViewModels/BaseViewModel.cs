@@ -5,11 +5,26 @@ namespace GuntherRefuse.ViewModels
 	{
 		[ObservableProperty]
 		[NotifyPropertyChangedFor(nameof(IsNotBusy))]
-		private bool isBusy;
+		bool isBusy;
 
 		public bool IsNotBusy => !IsBusy;
 
 		[ObservableProperty]
 		string title;
+
+		[ObservableProperty]
+		bool refreshing;
+
+		[RelayCommand]
+		public void Refreshed()
+		{
+			Refreshing = false;
+		}
+
+		[RelayCommand]
+		public void RefreshView()
+		{
+			Refreshing = true;
+		}
 	}
 }

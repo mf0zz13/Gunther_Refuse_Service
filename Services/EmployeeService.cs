@@ -37,5 +37,23 @@ namespace GuntherRefuse.Services
 
             return employeeList;
         }
+
+        public async Task<List<Employee>> GetHelpers()
+        {
+
+            await using SqlConnection connection = new SqlConnection(connectionString);
+
+            string sql = "SELECT * FROM Employee WHERE HasCDL = 0";
+
+            var result = await connection.QueryAsync<Employee>(sql);
+
+            foreach (Employee employee in result)
+            {
+                employee.FullName = $"{employee.FirstName.Trim()} {employee.LastName.Trim()}";
+                employeeList.Add(employee);
+            }
+
+            return employeeList;
+        }
     }
 }

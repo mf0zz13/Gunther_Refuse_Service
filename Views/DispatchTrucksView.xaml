@@ -11,65 +11,67 @@
         <BackButtonBehavior TextOverride="Back"/>
     </Shell.BackButtonBehavior>
 
-    <Shell.TitleView>
-        <Label Padding="20"
-               BackgroundColor="Transparent"
-               HorizontalOptions="StartAndExpand"
-               VerticalOptions="CenterAndExpand"
-               FontSize="36"
-               FontAttributes="Bold"
-               TextColor="White"
-               Text="{Binding Title}"/>
-    </Shell.TitleView>
+    <RefreshView IsRefreshing="{Binding Refreshing}"
+             Command="{Binding RefreshedCommand}">
+        <Shell.TitleView>
+            <Label Padding="20"
+                   BackgroundColor="Transparent"
+                   HorizontalOptions="StartAndExpand"
+                   VerticalOptions="CenterAndExpand"
+                   FontSize="36"
+                   FontAttributes="Bold"
+                   TextColor="White"
+                   Text="{Binding Title}"/>
+        </Shell.TitleView>
 
-    <CollectionView Grid.Row="1"
-                    BackgroundColor="White"
-                    ItemsSource="{Binding AvalibleTrucks}">
+        <CollectionView Grid.Row="1"
+                        BackgroundColor="White"
+                        ItemsSource="{Binding AvalibleTrucks}">
 
-        <CollectionView.ItemTemplate>
+            <CollectionView.ItemTemplate>
 
-            <DataTemplate x:DataType="model:Truck">
+                <DataTemplate x:DataType="model:Truck">
 
-                <Grid Padding="10">
+                    <Grid Padding="10">
 
-                    <Border BackgroundColor="White"
-                            MinimumHeightRequest="100"
-                            Stroke="#56706f"
-                            StrokeThickness="5">
-                        <Border.GestureRecognizers>
-                            <TapGestureRecognizer
-                                CommandParameter="{Binding .}"
-                                Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:DispatchTrucksViewModel}}, Path=GoToDispatchViewCommand}"/>
-                        </Border.GestureRecognizers>
+                        <Border BackgroundColor="White"
+                                MinimumHeightRequest="100"
+                                Stroke="#56706f"
+                                StrokeThickness="5">
+                            <Border.GestureRecognizers>
+                                <TapGestureRecognizer
+                                    CommandParameter="{Binding .}"
+                                    Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:DispatchTrucksViewModel}}, Path=GoToDispatchViewCommand}"/>
+                            </Border.GestureRecognizers>
 
-                        <Border.StrokeShape>
-                            <RoundRectangle CornerRadius="10,10,10,10"/>
-                        </Border.StrokeShape>
+                            <Border.StrokeShape>
+                                <RoundRectangle CornerRadius="10,10,10,10"/>
+                            </Border.StrokeShape>
 
-                        <Border.Shadow>
-                            <Shadow Brush="Black"
-                                    Offset="10,10"
-                                    Radius="10"
-                                    Opacity=".5"/>
-                        </Border.Shadow>
+                            <Border.Shadow>
+                                <Shadow Brush="Black"
+                                        Offset="10,10"
+                                        Radius="10"
+                                        Opacity=".5"/>
+                            </Border.Shadow>
 
-                        <Label FontAttributes="Bold"
-                               FontSize="26"
-                               HorizontalOptions="Center"
-                               VerticalOptions="Center"
-                               TextColor="Black"
-                               Text="{Binding TruckNumberFormatted}"/>
+                            <Label FontAttributes="Bold"
+                                   FontSize="26"
+                                   HorizontalOptions="Center"
+                                   VerticalOptions="Center"
+                                   TextColor="Black"
+                                   Text="{Binding TruckNumberFormatted}"/>
 
-                    </Border>
+                        </Border>
 
-                </Grid>
+                    </Grid>
 
-            </DataTemplate>
+                </DataTemplate>
 
-        </CollectionView.ItemTemplate>
+            </CollectionView.ItemTemplate>
 
-    </CollectionView>
+        </CollectionView>
+    </RefreshView>
 
-    
 
 </ContentPage>

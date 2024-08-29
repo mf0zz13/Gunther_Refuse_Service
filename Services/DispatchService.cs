@@ -21,5 +21,12 @@ public class DispatchService
 
         return dispatchedTrucks;
     }
+
+    public async Task DispatchTruck(string inject)
+    {
+        await using SqlConnection connection = new SqlConnection("Data Source=192.168.1.155,49250;Initial Catalog=MSSAProject;User ID=RemoteUser;Password=R3m0t3P@ssW0rd;Trust Server Certificate=True");
+        
+        connection.Execute(inject);
+    }
 }
 
