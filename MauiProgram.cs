@@ -41,6 +41,7 @@ namespace GuntherRefuse
 
             builder.Services.AddSingleton<ManageEmployeesView>();
 
+
             return builder.Build();
         }
     }

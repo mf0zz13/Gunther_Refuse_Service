@@ -2,16 +2,21 @@
 
 public partial class HomeView : ContentPage
 {
+    DispatchService ds = new();
+    HomeViewModel _viewModel;
     public HomeView(HomeViewModel viewModel)
     {
         InitializeComponent();
         BindingContext = viewModel;
+        _viewModel = viewModel;
     }
-    
-    public async void Initalize(HomeViewModel viewModel)
+
+    protected override void OnAppearing()
     {
-        await viewModel.GetNumberOfTrucks();
+        ds.GetTodaysRecordsCount(_viewModel);
+        base.OnAppearing();
     }
+
 }
 
 

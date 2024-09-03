@@ -25,6 +25,8 @@
             {
                 IsBusy = true;
 
+                this.AvalibleTrucks.Clear();
+
                 truckList = await trucksService.GetAvailableTrucks();
                 dispatchedList = await dispatchedTrucksService.GetTodaysRecords();
 
@@ -32,7 +34,7 @@
                 {
                     if (!dispatchedList.Any(x => x.TruckNumber == truck.TruckNumber))
                     {
-                        AvalibleTrucks.Add(truck);
+                        this.AvalibleTrucks.Add(truck);
                     }
                 }
             }

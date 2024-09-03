@@ -11,6 +11,9 @@
 
         public ObservableCollection<Dispatch> DispatchRecords { get; } = new();
 
+        [ObservableProperty]
+        int count;
+
         public HomeViewModel()
         {
             switch (currTime.Hour)
@@ -29,7 +32,6 @@
 
             Title = $"{properGreetingOftheDay} {name}";
             this.getTruckService = getTruckService;
-            this.GetNumberOfTrucks();
         }
 
         [RelayCommand]
@@ -48,7 +50,6 @@
                 {
                     DispatchRecords.Add(record);
                 }
-
             }
             catch
             {
