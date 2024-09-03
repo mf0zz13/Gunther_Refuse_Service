@@ -11,7 +11,7 @@ to store records, and the IOS application alows the user to generate new records
 ## Current Fuctions
 * Dispatch a truck
 
-## Planeed Features
+## Future Features
 * Add or Remove Employees
 * Add or Remove Trucks
 * Edit Dispatch Records
