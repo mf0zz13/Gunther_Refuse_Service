@@ -2,13 +2,16 @@ namespace GuntherRefuse.Services
 {
     public class EmployeeService
     {
-        List<Employee> employeeList = new();
+        private static string ConnectionString =>
+            Environment.GetEnvironmentVariable("GUNTHER_REFUSE_DB_CONNECTION")
+            ?? throw new InvalidOperationException(
+                "Database configuration is missing. Set GUNTHER_REFUSE_DB_CONNECTION outside source control.");
 
-        string connectionString = "Data Source=192.168.1.155,49250;Initial Catalog=MSSAProject;User ID=RemoteUser;Password=R3m0t3P@ssW0rd;Trust Server Certificate=True";
+        List<Employee> employeeList = new();
 
         public async Task<List<Employee>> GetEmployees()
         {
-            await using SqlConnection connection = new SqlConnection(connectionString);
+            await using SqlConnection connection = new SqlConnection(ConnectionString);
 
             string sql = "SELECT * FROM Employee";
 
@@ -23,7 +26,7 @@ namespace GuntherRefuse.Services
         public async Task<List<Employee>> GetDrivers()
         {
 
-            await using SqlConnection connection = new SqlConnection(connectionString);
+            await using SqlConnection connection = new SqlConnection(ConnectionString);
 
             string sql = "SELECT * FROM Employee WHERE HasCDL = 1";
 
@@ -41,7 +44,7 @@ namespace GuntherRefuse.Services
         public async Task<List<Employee>> GetHelpers()
         {
 
-            await using SqlConnection connection = new SqlConnection(connectionString);
+            await using SqlConnection connection = new SqlConnection(ConnectionString);
 
             string sql = "SELECT * FROM Employee WHERE HasCDL = 0";
 
